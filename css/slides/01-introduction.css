@@ -1,7 +1,7 @@
 .introduction-slide {
   display: grid;
-  width: min(100%, 72rem);
-  min-height: min(40.5rem, calc(100vh - 2rem));
+  width: min(100%, 80rem);
+  min-height: min(45.5rem, calc(100vh - 2rem));
   grid-template-columns: minmax(13rem, 0.8fr) minmax(0, 1.4fr);
   align-items: center;
   gap: clamp(1.5rem, 5vw, 4rem);
@@ -22,10 +22,11 @@
   color: #0f172a;
   font-family: var(--font-body);
   font-size: clamp(2.25rem, 5vw, 3.5rem);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 1;
 }
+
 
 .introduction-tagline {
   margin-top: 0.5rem;
@@ -40,6 +41,7 @@
   padding: 0;
   list-style: none;
 }
+
 
 .introduction-highlights li {
   display: flex;
@@ -69,6 +71,8 @@
   border-radius: 50%;
   background: #2563eb;
 }
+
+
 
 .website-preview {
   display: flex;
@@ -115,8 +119,15 @@
 .preview-navigation {
   gap: clamp(0.5rem, 2vw, 1.25rem);
   color: #64748b;
-  font-size: 0.7rem;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-style: normal;
+  font-synthesis: none;
   font-weight: 600;
+}
+
+.preview-navigation span {
+  font-style: normal;
 }
 
 .preview-navigation .is-current {
@@ -173,7 +184,7 @@
   color: #64748b;
   background: #f1f5f9;
   font-size: 0.6rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -183,7 +194,7 @@
   color: #0f172a;
   font-family: var(--font-body);
   font-size: clamp(1.5rem, 3vw, 2.2rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.1;
 }
 
@@ -191,16 +202,19 @@
   max-width: 42rem;
   color: #64748b;
   font-size: clamp(0.75rem, 1.4vw, 0.9rem);
+  font-style: normal;
   line-height: 1.6;
 }
 
 .preview-stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  border-radius: 0.2rem;
   gap: 0.5rem;
-  padding-top: 1.25rem;
+  padding-block: 1.25rem;
   border-top: 1px solid #f1f5f9;
   text-align: center;
+  background-color: #DBEAFE;
 }
 
 .preview-stats div {
@@ -236,5 +250,15 @@
 
   .preview-header {
     padding: 0.85rem 1rem;
+  }
+
+  .preview-content {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .preview-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 1rem;
   }
 }

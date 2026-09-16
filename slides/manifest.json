@@ -1,6 +1,10 @@
 [
   {
-    "html": "slides/01-introduction.html",
+    "html": "slides/01-introduction/index.html",
     "css": "css/slides/01-introduction.css"
+  },
+  {
+    "html": "slides/02-product-features/index.html",
+    "css": "css/slides/02-product-features.css"
   }
 ]

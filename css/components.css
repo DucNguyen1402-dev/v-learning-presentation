@@ -23,3 +23,17 @@
   border-color: var(--color-accent);
   color: var(--color-accent-dark);
 }
+
+@media (max-width: 30rem) {
+  .presentation-controls {
+    position: static;
+    width: fit-content;
+    margin: 0.75rem 0.75rem 0.75rem auto;
+    padding: 0.35rem;
+    border: 1px solid var(--color-line);
+    border-radius: 999px;
+    background: rgb(245 241 232 / 92%);
+    box-shadow: 0 0.5rem 1rem rgb(23 33 43 / 12%);
+    backdrop-filter: blur(0.5rem);
+  }
+}

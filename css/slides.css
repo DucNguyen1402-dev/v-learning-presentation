@@ -1,9 +1,13 @@
 .presentation {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
   min-height: 100vh;
 }
 
 .slide {
   display: none;
+  width: 100%;
   min-height: 100vh;
   padding: clamp(2rem, 8vw, 7rem);
   place-content: center;
@@ -12,6 +16,16 @@
 
 .slide.is-active {
   display: grid;
+}
+
+.slide:not(.is-active) {
+  display: none;
+}
+
+@media (max-width: 30rem) {
+  .presentation {
+    padding-bottom: 4.5rem;
+  }
 }
 
 .slide h1,
