@@ -6,5 +6,9 @@
   {
     "html": "slides/02-product-features/index.html",
     "css": "css/slides/02-product-features.css"
+  },
+  {
+    "html": "slides/03-user-flow/index.html",
+    "css": "css/slides/03-user-flow.css"
   }
 ]
