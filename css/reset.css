@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+main,
+section,
+h1,
+h2,
+h3,
+p,
+button {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+}

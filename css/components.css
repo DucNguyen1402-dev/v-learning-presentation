@@ -1,0 +1,25 @@
+.presentation-controls {
+  position: fixed;
+  right: var(--space-3);
+  bottom: var(--space-3);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}
+
+.presentation-controls button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--color-line);
+  border-radius: 50%;
+  color: var(--color-ink);
+  background: transparent;
+}
+
+.presentation-controls button:hover,
+.presentation-controls button:focus-visible {
+  border-color: var(--color-accent);
+  color: var(--color-accent-dark);
+}

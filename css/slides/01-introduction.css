@@ -1,0 +1,240 @@
+.introduction-slide {
+  display: grid;
+  width: min(100%, 72rem);
+  min-height: min(40.5rem, calc(100vh - 2rem));
+  grid-template-columns: minmax(13rem, 0.8fr) minmax(0, 1.4fr);
+  align-items: center;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  padding: clamp(1.5rem, 5vw, 3.5rem);
+  overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 50%);
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, #eff6ff, #e0f2fe);
+  box-shadow: 0 1.5rem 3rem rgb(15 23 42 / 25%);
+}
+
+.introduction-copy {
+  display: grid;
+  gap: 2rem;
+}
+
+.introduction-copy h1 {
+  color: #0f172a;
+  font-family: var(--font-body);
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.introduction-tagline {
+  margin-top: 0.5rem;
+  color: #2563eb;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 700;
+}
+
+.introduction-highlights {
+  display: grid;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.introduction-highlights li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgb(255 255 255 / 70%);
+  border-radius: 0.75rem;
+  background: rgb(255 255 255 / 60%);
+  box-shadow: 0 0.25rem 0.75rem rgb(30 64 175 / 8%);
+  font-size: clamp(0.9rem, 1.7vw, 1.1rem);
+  font-weight: 600;
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.introduction-highlights li:hover {
+  background: #fff;
+  transform: translateX(0.25rem);
+}
+
+.highlight-dot {
+  width: 0.65rem;
+  height: 0.65rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #2563eb;
+}
+
+.website-preview {
+  display: flex;
+  min-width: 0;
+  min-height: 30rem;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 0 1rem 2rem rgb(15 23 42 / 13%);
+}
+
+.preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.preview-brand,
+.preview-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.preview-brand {
+  gap: 0.5rem;
+  color: #1e293b;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.brand-mark {
+  padding: 0.25rem 0.45rem;
+  border-radius: 0.25rem;
+  color: #fff;
+  background: #2563eb;
+  font-size: 0.7rem;
+}
+
+.preview-navigation {
+  gap: clamp(0.5rem, 2vw, 1.25rem);
+  color: #64748b;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.preview-navigation .is-current {
+  color: #2563eb;
+}
+
+.preview-login,
+.preview-action {
+  border: 0;
+  border-radius: 0.4rem;
+  color: #fff;
+  background: #2563eb;
+  font-size: 0.7rem;
+  font-weight: 700;
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.preview-login {
+  padding: 0.6rem 0.9rem;
+}
+
+.preview-action {
+  padding: 0.65rem 0.9rem;
+}
+
+.preview-login:hover,
+.preview-action:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.preview-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  background: linear-gradient(#fff, #f8fafc);
+}
+
+.preview-hero {
+  display: grid;
+  justify-items: start;
+  gap: 1rem;
+}
+
+.preview-label {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  color: #64748b;
+  background: #f1f5f9;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.preview-hero h2 {
+  max-width: 20ch;
+  color: #0f172a;
+  font-family: var(--font-body);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.preview-hero p {
+  max-width: 42rem;
+  color: #64748b;
+  font-size: clamp(0.75rem, 1.4vw, 0.9rem);
+  line-height: 1.6;
+}
+
+.preview-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #f1f5f9;
+  text-align: center;
+}
+
+.preview-stats div {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.preview-stats strong {
+  color: #1e293b;
+  font-size: 0.85rem;
+}
+
+.preview-stats span {
+  color: #64748b;
+  font-size: 0.6rem;
+}
+
+@media (max-width: 48rem) {
+  .introduction-slide {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .website-preview {
+    min-height: 26rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .preview-navigation {
+    display: none;
+  }
+
+  .preview-header {
+    padding: 0.85rem 1rem;
+  }
+}
