@@ -2,8 +2,9 @@
   <div class="demo-window" data-demo-window tabindex="0">
     <header class="demo-header">
       <div>
-        <h1>Luồng trải nghiệm</h1>
-        <p>Hai luồng chính trong trải nghiệm V-learning.</p>
+        <span class="demo-kicker">Demo</span>
+        <h1>V-learning trải nghiệm</h1>
+        <p>Hai luồng chính: người dùng và quản trị.</p>
       </div>
       <div class="demo-meta">
         <span class="status-dot"></span>
@@ -12,7 +13,7 @@
     </header>
 
     <div class="flow-container">
-      <section
+      <div
         class="flow-card user-flow-card"
         aria-labelledby="user-flow-title"
         data-demo-panel
@@ -20,60 +21,60 @@
         <div class="flow-card-header">
           <span class="flow-index blue-index">01</span>
           <div>
-            <h2 id="user-flow-title">User Flow</h2>
+            <h2 id="user-flow-title">User flow</h2>
             <p>Khám phá và đăng ký khóa học</p>
           </div>
-        </div> <!-- flow-card-header -->
+        </div>
+
+        <div class="flow-node">
+          <span class="node-box">Đăng nhập / đăng ký</span>
+        </div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-node">
+          <span class="node-box">Trang chủ</span>
+        </div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-node">
+          <span class="node-box">Danh sách khóa học</span>
+        </div>
+        <div class="flow-arrow split-arrow">↙ &nbsp;&nbsp;&nbsp;&nbsp; ↘</div>
+        <div class="flow-row">
           <div class="flow-node">
-            <span class="node-box">Đăng nhập ⇄ Đăng ký tài khoản</span>
-          </div>
-          <div class="flow-arrow">↓</div>
-          <div class="flow-node">
-            <span class="node-box">Trang chủ</span>
-          </div>
-          <div class="flow-arrow">↓</div>
-          <div class="flow-node">
-            <span class="node-box">Danh sách khóa học</span>
-          </div>
-          <div class="flow-arrow split-arrow">↙ &nbsp;&nbsp;&nbsp;&nbsp; ↘</div>
-          <div class="flow-row">
-            <div class="flow-node">
-              <span class="node-box">Tìm kiếm</span>
-              <div class="flow-arrow">↘</div>
-            </div>
-            <div class="flow-node">
-              <span class="node-box">Lọc</span>
-              <div class="flow-arrow">↙</div>
-            </div>
+            <span class="node-box">Tìm kiếm</span>
+            <div class="flow-arrow">↘</div>
           </div>
           <div class="flow-node">
-            <span class="node-box">Chi tiết khóa học</span>
-          </div>
-          <div class="flow-arrow">↓</div>
-          <div class="flow-node">
-            <span class="node-box">Đăng ký khóa học</span>
-          </div>
-          <div class="flow-arrow">↓</div>
-          <div class="flow-node">
-            <span class="node-box">Khóa học cá nhân</span>
-          </div>
-          <div class="flow-arrow">↓</div>
-          <div class="flow-node">
-            <span class="node-box">Chi tiết khóa học cá nhân</span>
-          </div>
-          <div class="flow-arrow split-arrow">↙ &nbsp;&nbsp;&nbsp;&nbsp; ↘</div>
-          <div class="flow-row">
-            <div class="flow-node">
-              <span class="node-box accent-box"
-                >Bắt đầu học<br /><small>(chưa triển khai)</small></span
-              >
-            </div>
-            <div class="flow-node">
-              <span class="node-box">Hủy khóa học</span>
-            </div>
+            <span class="node-box">Lọc</span>
+            <div class="flow-arrow">↙</div>
           </div>
         </div>
-      </section>
+        <div class="flow-node">
+          <span class="node-box">Chi tiết khóa học</span>
+        </div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-node">
+          <span class="node-box">Đăng ký khóa học</span>
+        </div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-node">
+          <span class="node-box">Khóa học của tôi</span>
+        </div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-node">
+          <span class="node-box">Chi tiết học phần</span>
+        </div>
+        <div class="flow-arrow split-arrow">↙ &nbsp;&nbsp;&nbsp;&nbsp; ↘</div>
+        <div class="flow-row">
+          <div class="flow-node">
+            <span class="node-box accent-box"
+              >Bắt đầu học<small>sắp triển khai</small></span
+            >
+          </div>
+          <div class="flow-node">
+            <span class="node-box">Hủy khóa học</span>
+          </div>
+        </div>
+      </div>
 
       <section
         class="flow-card admin-flow-card"
@@ -84,13 +85,14 @@
         <div class="flow-card-header">
           <span class="flow-index orange-index">02</span>
           <div>
-            <h2 id="admin-flow-title">Admin Flow</h2>
+            <h2 id="admin-flow-title">Admin flow</h2>
             <p>Quản trị khóa học và người dùng</p>
           </div>
         </div>
+
         <div class="flow-group">
           <div class="flow-node">
-            <span class="node-box">Đăng nhập Admin</span>
+            <span class="node-box">Đăng nhập admin</span>
           </div>
           <div class="flow-arrow">↓</div>
           <div class="flow-node">
@@ -98,12 +100,10 @@
           </div>
           <div class="flow-arrow">↓</div>
 
-          <!-- Nhánh lớn: KHÓA HỌC & NGƯỜI DÙNG -->
           <div class="flow-row wide-row">
-            <!-- Nhóm Khóa học -->
             <div class="flow-branch">
               <div class="flow-node">
-                <span class="node-box parent-box">KHÓA HỌC</span>
+                <span class="node-box parent-box">Khóa học</span>
               </div>
               <div class="flow-arrow">↓</div>
               <div class="flow-sub-row">
@@ -117,18 +117,17 @@
                   <span class="node-box sm-box">Xóa</span>
                 </div>
                 <div class="flow-node">
-                  <span class="node-box sm-box">Quản lý ghi danh</span>
+                  <span class="node-box sm-box">Ghi danh</span>
                 </div>
                 <div class="flow-node">
-                  <span class="node-box sm-box">Ghi danh học viên</span>
+                  <span class="node-box sm-box">Học viên</span>
                 </div>
               </div>
             </div>
 
-            <!-- Nhóm Người dùng -->
             <div class="flow-branch">
               <div class="flow-node">
-                <span class="node-box parent-box">NGƯỜI DÙNG</span>
+                <span class="node-box parent-box">Người dùng</span>
               </div>
               <div class="flow-arrow">↓</div>
               <div class="flow-sub-row">
@@ -142,7 +141,7 @@
                   <span class="node-box sm-box">Xóa</span>
                 </div>
                 <div class="flow-node">
-                  <span class="node-box sm-box">Xem khóa học đã ghi danh</span>
+                  <span class="node-box sm-box">Khóa học đã ghi danh</span>
                 </div>
               </div>
             </div>

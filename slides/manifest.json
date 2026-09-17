@@ -26,5 +26,9 @@
   {
     "html": "slides/07-demo/index.html",
     "css": "slides/07-demo/style.css"
+  },
+  {
+    "html": "slides/08-end/index.html",
+    "css": "slides/08-end/style.css"
   }
 ]
