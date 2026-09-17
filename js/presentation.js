@@ -28,6 +28,7 @@ window.VLearningPresentation = {
 
     container.innerHTML = slideMarkup.join("\n");
     this.slides = Array.from(container.querySelectorAll("[data-slide]"));
+    document.dispatchEvent(new CustomEvent("slides:loaded"));
   },
 
   loadStyle(stylePath) {

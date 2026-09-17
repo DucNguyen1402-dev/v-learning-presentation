@@ -1,63 +1,78 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const dragState = { viewport: null, startX: 0, startScrollLeft: 0 };
+const updateFlowProgress = (gallery, activeIndex) => {
+  const progress = gallery.querySelector("[data-flow-progress]");
+  const slides = [...gallery.querySelectorAll("[data-flow-slide]")];
+  if (!progress || slides.length === 0) return;
 
-  const updateProgress = (viewport) => {
-    const progress = viewport
-      .closest(".flow-gallery")
-      ?.querySelector("[data-flow-progress]");
-    if (!progress) return;
-    const scrollableWidth = viewport.scrollWidth - viewport.clientWidth;
-    const ratio =
-      scrollableWidth > 0 ? viewport.scrollLeft / scrollableWidth : 0;
-    progress.style.width = `${Math.max(30, ratio * 70 + 30)}%`;
-  };
+  const ratio = ((activeIndex + 1) / slides.length) * 100;
+  progress.style.width = `${Math.max(20, ratio)}%`;
+};
 
-  document.addEventListener("pointerdown", (event) => {
-    const viewport = event.target.closest("[data-flow-viewport]");
-    if (!viewport) return;
-    dragState.viewport = viewport;
-    dragState.startX = event.clientX;
-    dragState.startScrollLeft = viewport.scrollLeft;
-    viewport.classList.add("is-dragging");
-    viewport.setPointerCapture?.(event.pointerId);
-  });
+const renderFlowGallery = (gallery) => {
+  const slides = [...gallery.querySelectorAll("[data-flow-slide]")];
+  if (!slides.length) return;
 
-  document.addEventListener("pointermove", (event) => {
-    const { viewport } = dragState;
-    if (!viewport) return;
-    viewport.scrollLeft =
-      dragState.startScrollLeft - (event.clientX - dragState.startX);
-    updateProgress(viewport);
-  });
-
-  const stopDragging = () => {
-    dragState.viewport?.classList.remove("is-dragging");
-    dragState.viewport = null;
-  };
-
-  document.addEventListener("pointerup", stopDragging);
-  document.addEventListener("pointercancel", stopDragging);
-
-  document.addEventListener("click", (event) => {
-    const button = event.target.closest("[data-flow-scroll]");
-    if (!button) return;
-    const viewport = button
-      .closest(".flow-gallery")
-      ?.querySelector("[data-flow-viewport]");
-    if (!viewport) return;
-    const distance = viewport.clientWidth * 0.72;
-    viewport.scrollBy({
-      left: button.dataset.flowScroll === "right" ? distance : -distance,
-      behavior: "smooth",
-    });
-  });
-
-  document.addEventListener(
-    "scroll",
-    (event) => {
-      if (event.target.matches?.("[data-flow-viewport]"))
-        updateProgress(event.target);
-    },
-    true,
+  const currentIndex = slides.findIndex((slide) =>
+    slide.classList.contains("is-active"),
   );
-});
+  const activeIndex = currentIndex >= 0 ? currentIndex : 0;
+
+  slides.forEach((slide, index) => {
+    slide.classList.toggle("is-active", index === activeIndex);
+  });
+
+  updateFlowProgress(gallery, activeIndex);
+};
+
+const bindFlowGalleryControls = (gallery) => {
+  const slides = [...gallery.querySelectorAll("[data-flow-slide]")];
+  if (!slides.length) return;
+
+  const buttons = gallery.querySelectorAll("[data-flow-scroll]");
+  const viewport = gallery.querySelector("[data-flow-viewport]");
+
+  buttons.forEach((button) => {
+    button.onclick = () => {
+      const activeIndex = slides.findIndex((slide) =>
+        slide.classList.contains("is-active"),
+      );
+      const nextIndex =
+        (activeIndex +
+          (button.dataset.flowScroll === "right" ? 1 : -1) +
+          slides.length) %
+        slides.length;
+
+      slides.forEach((slide, index) => {
+        slide.classList.toggle("is-active", index === nextIndex);
+      });
+
+      updateFlowProgress(gallery, nextIndex);
+    };
+  });
+
+  viewport?.addEventListener("keydown", (event) => {
+    const activeIndex = slides.findIndex((slide) =>
+      slide.classList.contains("is-active"),
+    );
+    const nextIndex =
+      (activeIndex + (event.key === "ArrowRight" ? 1 : -1) + slides.length) %
+      slides.length;
+
+    if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+      slides.forEach((slide, index) => {
+        slide.classList.toggle("is-active", index === nextIndex);
+      });
+      updateFlowProgress(gallery, nextIndex);
+    }
+  });
+};
+
+const setupFlowGalleries = () => {
+  document.querySelectorAll(".flow-gallery").forEach((gallery) => {
+    renderFlowGallery(gallery);
+    bindFlowGalleryControls(gallery);
+  });
+};
+
+document.addEventListener("DOMContentLoaded", setupFlowGalleries);
+document.addEventListener("slides:loaded", setupFlowGalleries);
+window.addEventListener("load", setupFlowGalleries);
