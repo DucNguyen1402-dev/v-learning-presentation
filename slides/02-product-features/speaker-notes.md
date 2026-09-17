@@ -1,4 +1,4 @@
-Mở đầu là phần **tổng quan về sản phẩm và các chức năng chính của V-learning**.
+Mở đầu là phần **tổng quan về sản phẩm và các chức năng chính của dự án V-learning**.
 
 Về cơ bản, sản phẩm được chia thành **hai phía chính**: phía **Học viên** và phía **Quản trị viên**.
 
