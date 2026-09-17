@@ -68,5 +68,14 @@ window.VLearningPresentation = {
     const counter = document.querySelector("[data-slide-count]");
     if (counter)
       counter.textContent = `${this.currentIndex + 1} / ${this.slides.length}`;
+
+    const resetScroll = () => {
+      const scroller = document.scrollingElement;
+      if (scroller) scroller.scrollTop = 0;
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    };
+
+    resetScroll();
+    requestAnimationFrame(resetScroll);
   },
 };

@@ -1,0 +1,397 @@
+<section class="slide tech-stack-container" data-slide aria-label="Tech Stack">
+  <div class="tech-window" data-tech-window tabindex="0">
+    <header class="window-bar">
+      <div class="window-brand">
+        <div class="logo-icon">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+          </svg>
+        </div>
+        <h1>Công nghệ nền tảng</h1>
+      </div>
+    </header>
+
+    <div class="window-body">
+      <nav class="tech-nav" aria-label="Danh mục tech stack" role="tablist">
+        <p class="nav-label">Explore stack</p>
+        <button
+          class="tech-tab is-active"
+          type="button"
+          role="tab"
+          aria-selected="true"
+          aria-controls="tech-panel-1"
+          data-tech-tab="tech-panel-1"
+        >
+          <span class="tab-number">01</span>
+          <span><strong>Ngôn ngữ</strong><small>Platform core</small></span>
+        </button>
+        <button
+          class="tech-tab"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="tech-panel-2"
+          data-tech-tab="tech-panel-2"
+        >
+          <span class="tab-number">02</span>
+          <span><strong>Routing</strong><small>Navigation layer</small></span>
+        </button>
+        <button
+          class="tech-tab"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="tech-panel-3"
+          data-tech-tab="tech-panel-3"
+        >
+          <span class="tab-number">03</span>
+          <span><strong>State & Data</strong><small>Data flow</small></span>
+        </button>
+        <button
+          class="tech-tab"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="tech-panel-4"
+          data-tech-tab="tech-panel-4"
+        >
+          <span class="tab-number">04</span>
+          <span><strong>Forms</strong><small>Input layer</small></span>
+        </button>
+        <button
+          class="tech-tab"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="tech-panel-5"
+          data-tech-tab="tech-panel-5"
+        >
+          <span class="tab-number">05</span>
+          <span><strong>UI & Styling</strong><small>Design system</small></span>
+        </button>
+        <button
+          class="tech-tab"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="tech-panel-6"
+          data-tech-tab="tech-panel-6"
+        >
+          <span class="tab-number">06</span>
+          <span><strong>Tiện ích</strong><small>Product helpers</small></span>
+        </button>
+        <button
+          class="tech-tab"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="tech-panel-7"
+          data-tech-tab="tech-panel-7"
+        >
+          <span class="tab-number">07</span>
+          <span><strong>Tooling</strong><small>Code quality</small></span>
+        </button>
+        <div class="nav-footer">Use ↑ ↓ to browse</div>
+      </nav>
+
+      <main class="tech-content">
+        <div class="content-heading">
+          <span class="eyebrow">System overview</span>
+          <span class="panel-counter" data-tech-counter>01 / 07</span>
+        </div>
+
+        <div
+          class="tech-panel is-active"
+          id="tech-panel-1"
+          role="tabpanel"
+          data-tech-panel
+        >
+          <div class="panel-title">
+            <span class="step-num bg-blue">01</span>
+            <div>
+              <h2>Ngôn ngữ & Nền tảng</h2>
+              <p>Những lớp nền tảng của dự án.</p>
+            </div>
+          </div>
+          <div class="panel-grid panel-grid-three">
+            <div class="tech-item">
+              <div class="tech-logo ts-bg">TS</div>
+              <div class="tech-info">
+                <h3>TypeScript</h3>
+                <p>Ngôn ngữ chính, type-safe toàn bộ codebase</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo react-bg">⚛️</div>
+              <div class="tech-info">
+                <h3>React 19</h3>
+                <p>Thư viện UI</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo vite-bg">⚡</div>
+              <div class="tech-info">
+                <h3>Vite</h3>
+                <p>Build tool & dev server (nhanh, HMR)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="tech-panel"
+          id="tech-panel-2"
+          role="tabpanel"
+          data-tech-panel
+          hidden
+        >
+          <div class="panel-title">
+            <span class="step-num bg-purple">02</span>
+            <div>
+              <h2>Routing</h2>
+              <p>Điều hướng người dùng qua các không gian Admin và Client.</p>
+            </div>
+          </div>
+          <div class="panel-grid panel-grid-one">
+            <div class="tech-item">
+              <div class="tech-logo router-bg">🔀</div>
+              <div class="tech-info text-center">
+                <h3>React Router</h3>
+                <span class="version">(v7/v8)</span>
+                <p>
+                  Điều hướng, phân tách route theo layout Admin/Client, có
+                  RouteGuard
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="tech-panel"
+          id="tech-panel-3"
+          role="tabpanel"
+          data-tech-panel
+          hidden
+        >
+          <div class="panel-title">
+            <span class="step-num bg-teal">03</span>
+            <div>
+              <h2>State & Data Fetching</h2>
+              <p>Quản lý dữ liệu từ API và trạng thái dùng chung.</p>
+            </div>
+          </div>
+          <div class="panel-grid panel-grid-three">
+            <div class="tech-item">
+              <div class="tech-logo query-bg">🔴</div>
+              <div class="tech-info text-center">
+                <h3>TanStack React Query <span class="version">(v5)</span></h3>
+                <p>Quản lý server state, caching, fetching API</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo react-bg">⚛️</div>
+              <div class="tech-info text-center">
+                <h3>React Context API</h3>
+                <p>
+                  Quản lý state cục bộ (Auth, Provider theo layout Admin/Client)
+                </p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo axios-bg">AX</div>
+              <div class="tech-info text-center">
+                <h3>Axios</h3>
+                <p>
+                  HTTP client, có interceptor tự động đính kèm Access Token vào
+                  request
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="tech-panel"
+          id="tech-panel-4"
+          role="tabpanel"
+          data-tech-panel
+          hidden
+        >
+          <div class="panel-title">
+            <span class="step-num bg-orange">04</span>
+            <div>
+              <h2>Form & Validation</h2>
+              <p>Luồng nhập liệu rõ ràng, nhất quán và có kiểm tra.</p>
+            </div>
+          </div>
+          <div class="panel-grid panel-grid-two">
+            <div class="tech-item">
+              <div class="tech-logo form-bg">📝</div>
+              <div class="tech-info text-center">
+                <h3>React Hook Form</h3>
+                <p>Quản lý form</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo val-bg">🛡️</div>
+              <div class="tech-info text-center">
+                <h3>Validation rules</h3>
+                <p>Tự viết theo module (login/register)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="tech-panel"
+          id="tech-panel-5"
+          role="tabpanel"
+          data-tech-panel
+          hidden
+        >
+          <div class="panel-title">
+            <span class="step-num bg-blue">05</span>
+            <div>
+              <h2>UI & Styling</h2>
+              <p>Hệ thống giao diện và các primitive có thể tái sử dụng.</p>
+            </div>
+          </div>
+          <div class="panel-grid panel-grid-three">
+            <div class="tech-item">
+              <div class="tech-logo tailwind-bg">🌊</div>
+              <div class="tech-info text-center">
+                <h3>
+                  Tailwind CSS v4
+                  <span class="sub-dim">(@tailwindcss/vite)</span>
+                </h3>
+                <p>Utility-first CSS</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo radix-bg">⚪</div>
+              <div class="tech-info text-center">
+                <h3>Radix UI</h3>
+                <p>Headless UI components (accessible primitives)</p>
+              </div>
+            </div>
+
+            <div class="sub-row">
+              <div class="tech-item small">
+                <span class="mini-tag blue-text">tailwind-merge</span>
+                <div class="text-center">
+                  <strong>tailwind-merge</strong>
+                  <p>Hợp nhất className</p>
+                </div>
+              </div>
+              <div class="tech-item small">
+                <span class="mini-tag purple-text">clsx</span>
+                <div class="text-center">
+                  <strong>clsx</strong>
+                  <p>Xử lý className linh hoạt</p>
+                </div>
+              </div>
+              <div class="tech-item small">
+                <span class="mini-icon">🔲</span>
+                <div class="text-center">
+                  <strong>Lucide React</strong>
+                  <p>Icon set</p>
+                </div>
+              </div>
+              <div class="tech-item small">
+                <span class="mini-icon">🟣</span>
+                <div class="text-center">
+                  <strong
+                    >Motion
+                    <span class="sub-dim">(Framer Motion mới)</span></strong
+                  >
+                  <p>Animation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="tech-panel"
+          id="tech-panel-6"
+          role="tabpanel"
+          data-tech-panel
+          hidden
+        >
+          <div class="panel-title">
+            <span class="step-num bg-cyan">06</span>
+            <div>
+              <h2>Tiện ích khác</h2>
+              <p>Những công cụ nhỏ hỗ trợ các workflow chính.</p>
+            </div>
+          </div>
+          <div class="panel-grid panel-grid-two">
+            <div class="tech-item">
+              <div class="tech-logo date-bg">📅</div>
+              <div class="tech-info">
+                <h3>date-fns</h3>
+                <p>Xử lý ngày tháng</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo qr-bg">🔲</div>
+              <div class="tech-info">
+                <h3>qrcode</h3>
+                <p>Sinh mã QR</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="tech-panel"
+          id="tech-panel-7"
+          role="tabpanel"
+          data-tech-panel
+          hidden
+        >
+          <div class="panel-title">
+            <span class="step-num bg-blue">07</span>
+            <div>
+              <h2>Code Quality & Tooling</h2>
+              <p>Giữ codebase dễ đọc, nhất quán và dễ mở rộng.</p>
+            </div>
+          </div>
+          <div class="panel-grid panel-grid-three">
+            <div class="tech-item">
+              <div class="tech-logo eslint-bg">🛡️</div>
+              <div class="tech-info text-center">
+                <h3>ESLint</h3>
+                <p>(+ typescript-eslint, react-hooks, simple-import-sort)</p>
+                <span class="highlight-tag">Lint code</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo prettier-bg">📊</div>
+              <div class="tech-info">
+                <h3>Prettier</h3>
+                <p>(+ prettier-plugin-tailwindcss)</p>
+                <span class="highlight-tag">Format code</span>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo madge-bg">🔗</div>
+              <div class="tech-info">
+                <h3>madge</h3>
+                <p>Kiểm tra circular dependency</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</section>

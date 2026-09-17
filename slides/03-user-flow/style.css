@@ -172,7 +172,6 @@
   font-weight: 700;
 }
 
-
 .flow-viewport {
   min-width: 0;
   min-height: 0;
@@ -226,11 +225,11 @@
 }
 
 .flow-screen-wide {
-  width: min(100%, 90rem);
+  width: 100%;
 }
 
 .flow-screen-compact {
-  width: min(100%, 90rem);
+  width: 100%;
 }
 
 .flow-screen img {

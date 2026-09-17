@@ -1,0 +1,90 @@
+<section
+  class="slide architecture-container"
+  data-slide
+  aria-label="Application Architecture Flow"
+>
+  <header class="architecture-header">
+    <span class="architecture-kicker">Thiết kế hệ thống</span>
+    <h1 class="architecture-title">Kiến trúc & Luồng hoạt động</h1>
+    <p>Luồng khởi tạo ứng dụng và phân tách route theo từng layout.</p>
+  </header>
+
+  <div class="architecture-flow">
+    <div class="node">main.tsx</div>
+    <div class="arrow" aria-hidden="true">↓</div>
+
+    <div class="node">App.tsx</div>
+    <div class="arrow" aria-hidden="true">↓</div>
+
+    <div class="node">
+      <h3 class="text-center">AppProvider</h3>
+      <p>(Layout / Loading / Modal / Toast / AppLock / CurrentUser)</p>
+    </div>
+    <div class="arrow" aria-hidden="true">↓</div>
+
+    <div class="node">AppRoutes</div>
+
+    <div class="branch-arrow" aria-hidden="true">
+      <span>↙</span>
+      <span>↘</span>
+    </div>
+
+    <div class="split-container">
+      <div class="branch">
+        <div class="node">
+          <strong>Admin Route Tree</strong>
+          <span>+ AdminRouteGuard</span>
+        </div>
+        <div class="arrow" aria-hidden="true">↓</div>
+        <div class="node">
+          <strong>Admin Layout</strong>
+          <span>(layouts/admin)</span>
+        </div>
+        <div class="arrow" aria-hidden="true">↓</div>
+        <div class="node">
+          <strong>Modules</strong>
+          <span>(courses, users, profile... - admin)</span>
+        </div>
+      </div>
+
+      <div class="branch">
+        <div class="node">
+          <strong>Client Route Tree</strong>
+          <span>+ ClientRouteGuard</span>
+        </div>
+        <div class="arrow" aria-hidden="true">↓</div>
+        <div class="node">
+          <strong>Client Layout</strong>
+          <span>(layouts/client)</span>
+        </div>
+        <div class="arrow" aria-hidden="true">↓</div>
+        <div class="node">
+          <strong>Modules</strong>
+          <span
+            >(home, login, register, courses, personal-courses, profile,
+            user...)</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="branch-arrow merge-arrow" aria-hidden="true">
+      <span>↘</span>
+      <span>↙</span>
+    </div>
+
+    <div class="node wide-node">
+      <h3>Shared Layer</h3>
+      <p>
+        (api, ui, table, fields, session, navigation, current-user, storage,
+        theme...)
+      </p>
+    </div>
+    <div class="arrow" aria-hidden="true">↓</div>
+
+    <div class="node">
+      <strong>API Client</strong>
+      <span>(shared/api)</span>
+    </div>
+  </div>
+</section>

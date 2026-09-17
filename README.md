@@ -1,26 +1,36 @@
-# V-Learning Presentation
+Đăng nhập ↔ Đăng ký tài khoản
+↓
+Trang chủ
+↓
+Danh sách khóa học
+↙ ↘
+Tìm kiếm Lọc
+↘ ↙
+↓
+Chi tiết khóa học
+↓
+Đăng ký khóa học
+↓
+Khóa học cá nhân
+↓
+Chi tiết khóa học cá nhân
+↙ ↘
+Bắt đầu học Hủy khóa học
+(chưa triển khai)
 
-Bộ khung presentation HTML/CSS/JavaScript thuần.
+                     Đăng nhập Admin
+                           ↓
+                      Trang quản trị
+                             ↓
+               ----------------------------------------------------
+               ↓                                                  ↓
+            KHÓA HỌC                                          NGƯỜI DÙNG
+              ↓                                                   ↓
+      ┌──────┼──────┬───────┼──────┐                         ┌──────┼──────┬──────────────┐
+      ↓      ↓      ↓       ↓      ↓                         ↓      ↓      ↓              ↓
+     Thêm   Sửa    Xóa   Quản lý  Ghi danh                  Thêm    Sửa    Xóa         Xem khóa học đã ghi danh
+                        ghi danh  học viên
 
-## Cấu trúc
 
-- `index.html`: trang trình chiếu chính.
-- `css/`: reset, biến giao diện, nền tảng, component, animation và style dùng
-  chung của slide.
-- `css/slides/`: stylesheet riêng cho từng slide, dùng cùng tên với slide.
-- `js/`: logic presentation và điều hướng.
-- `slides/`: mỗi slide là một HTML fragment riêng, được khai báo cùng file CSS
-  trong `slides/manifest.json`.
-- `assets/images/`: logo, screenshots và diagrams.
-- `assets/fonts/`: font cục bộ.
 
-Chạy một local server tại thư mục dự án rồi mở `index.html`, vì presentation
-load các slide bằng `fetch()`.
 
-Ví dụ:
-
-```bash
-python -m http.server 8000
-```
-
-Sau đó mở `http://localhost:8000`.

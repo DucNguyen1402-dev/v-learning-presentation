@@ -14,5 +14,17 @@
   {
     "html": "slides/04-admin-flow/index.html",
     "css": "slides/04-admin-flow/style.css"
+  },
+  {
+    "html": "slides/05-tech/index.html",
+    "css": "slides/05-tech/style.css"
+  },
+  {
+    "html": "slides/06-architecture/index.html",
+    "css": "slides/06-architecture/style.css"
+  },
+  {
+    "html": "slides/07-demo/index.html",
+    "css": "slides/07-demo/style.css"
   }
 ]
