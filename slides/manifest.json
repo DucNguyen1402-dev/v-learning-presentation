@@ -1,14 +1,18 @@
 [
   {
     "html": "slides/01-introduction/index.html",
-    "css": "css/slides/01-introduction.css"
+    "css": "slides/01-introduction/style.css"
   },
   {
     "html": "slides/02-product-features/index.html",
-    "css": "css/slides/02-product-features.css"
+    "css": "slides/02-product-features/style.css"
   },
   {
     "html": "slides/03-user-flow/index.html",
-    "css": "css/slides/03-user-flow.css"
+    "css": "slides/03-user-flow/style.css"
+  },
+  {
+    "html": "slides/04-admin-flow/index.html",
+    "css": "slides/04-admin-flow/style.css"
   }
 ]

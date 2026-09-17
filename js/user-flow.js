@@ -7,6 +7,23 @@ const updateFlowProgress = (gallery, activeIndex) => {
   progress.style.width = `${Math.max(20, ratio)}%`;
 };
 
+const updateFlowStep = (gallery, activeIndex) => {
+  const steps = [
+    ...(gallery
+      .closest(".user-flow-slide")
+      ?.querySelectorAll(".flow-steps li") || []),
+  ];
+
+  steps.forEach((step, index) => {
+    const isCurrent = index === activeIndex;
+    step.classList.toggle("is-current", isCurrent);
+    if (isCurrent) step.setAttribute("aria-current", "step");
+    else step.removeAttribute("aria-current");
+  });
+};
+
+const flowGalleryActions = new WeakMap();
+
 const renderFlowGallery = (gallery) => {
   const slides = [...gallery.querySelectorAll("[data-flow-slide]")];
   if (!slides.length) return;
@@ -21,49 +38,54 @@ const renderFlowGallery = (gallery) => {
   });
 
   updateFlowProgress(gallery, activeIndex);
+  updateFlowStep(gallery, activeIndex);
 };
 
 const bindFlowGalleryControls = (gallery) => {
   const slides = [...gallery.querySelectorAll("[data-flow-slide]")];
   if (!slides.length) return;
 
-  const buttons = gallery.querySelectorAll("[data-flow-scroll]");
-  const viewport = gallery.querySelector("[data-flow-viewport]");
-
-  buttons.forEach((button) => {
-    button.onclick = () => {
-      const activeIndex = slides.findIndex((slide) =>
-        slide.classList.contains("is-active"),
-      );
-      const nextIndex =
-        (activeIndex +
-          (button.dataset.flowScroll === "right" ? 1 : -1) +
-          slides.length) %
-        slides.length;
-
-      slides.forEach((slide, index) => {
-        slide.classList.toggle("is-active", index === nextIndex);
-      });
-
-      updateFlowProgress(gallery, nextIndex);
-    };
-  });
-
-  viewport?.addEventListener("keydown", (event) => {
+  flowGalleryActions.set(gallery, (direction) => {
     const activeIndex = slides.findIndex((slide) =>
       slide.classList.contains("is-active"),
     );
-    const nextIndex =
-      (activeIndex + (event.key === "ArrowRight" ? 1 : -1) + slides.length) %
-      slides.length;
+    const nextIndex = (activeIndex + direction + slides.length) % slides.length;
 
-    if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
-      slides.forEach((slide, index) => {
-        slide.classList.toggle("is-active", index === nextIndex);
-      });
-      updateFlowProgress(gallery, nextIndex);
+    slides.forEach((slide, index) => {
+      slide.classList.toggle("is-active", index === nextIndex);
+    });
+    updateFlowProgress(gallery, nextIndex);
+    updateFlowStep(gallery, nextIndex);
+  });
+};
+
+const bindFlowKeyboardControls = () => {
+  if (document.body.dataset.flowKeyboardBound === "true") return;
+
+  document.addEventListener("keyup", (event) => {
+    if (event.target.closest("input, textarea, select, [contenteditable]"))
+      return;
+
+    const gallery = document.querySelector(
+      ".user-flow-slide.is-active .flow-gallery",
+    );
+    const changeSlide = gallery && flowGalleryActions.get(gallery);
+    if (!changeSlide) return;
+
+    if (event.code === "KeyA") {
+      event.preventDefault();
+      event.stopPropagation();
+      changeSlide(-1);
+    }
+
+    if (event.code === "KeyD") {
+      event.preventDefault();
+      event.stopPropagation();
+      changeSlide(1);
     }
   });
+
+  document.body.dataset.flowKeyboardBound = "true";
 };
 
 const setupFlowGalleries = () => {
@@ -71,6 +93,7 @@ const setupFlowGalleries = () => {
     renderFlowGallery(gallery);
     bindFlowGalleryControls(gallery);
   });
+  bindFlowKeyboardControls();
 };
 
 document.addEventListener("DOMContentLoaded", setupFlowGalleries);
