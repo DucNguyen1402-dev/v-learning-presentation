@@ -19,3 +19,13 @@ button {
 button {
   font: inherit;
 }
+
+/* remove default browser outline on click; keep a clean one for keyboard nav */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent, #e56b4a);
+  outline-offset: 2px;
+}

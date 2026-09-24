@@ -40,11 +40,15 @@
     "css": "slides/10-demo-overview/style.css"
   },
   {
-    "html": "slides/11-demo/index.html",
-    "css": "slides/11-demo/style.css"
+    "html": "slides/11-user-flow/index.html",
+    "css": "slides/11-user-flow/style.css"
   },
   {
-    "html": "slides/12-end/index.html",
-    "css": "slides/12-end/style.css"
+    "html": "slides/12-admin-features/index.html",
+    "css": "slides/12-admin-features/style.css"
+  },
+  {
+    "html": "slides/13-end/index.html",
+    "css": "slides/13-end/style.css"
   }
 ]
