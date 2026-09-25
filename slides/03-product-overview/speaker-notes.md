@@ -1,1 +1,5 @@
-Sau đây, em xin bắt đầu với nhóm nội dung đầu tiên, giới thiệu về **tổng quan sản phẩm, trải nghiệm người dùng và chức năng quản trị**.
+Bây giờ chúng ta hãy cùng bắt đầu với phần đầu tiên : về **tổng quan sản phẩm** với 3 nhóm nội dung chính:
+
+- Sản phẩm và chức năng chính
+- User flow & giao diện
+- admin side & chức năng quản trị

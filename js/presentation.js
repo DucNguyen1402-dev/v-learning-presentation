@@ -1,3 +1,5 @@
+const SLIDE_INDEX_STORAGE_KEY = "vlearning-current-slide-index";
+
 window.VLearningPresentation = {
   slides: [],
   currentIndex: 0,
@@ -5,7 +7,16 @@ window.VLearningPresentation = {
 
   async init() {
     await this.loadSlides();
+    this.currentIndex = this.restoreIndex();
     this.update();
+  },
+
+  restoreIndex() {
+    const saved = Number(sessionStorage.getItem(SLIDE_INDEX_STORAGE_KEY));
+    if (Number.isInteger(saved) && saved >= 0 && saved < this.slides.length) {
+      return saved;
+    }
+    return 0;
   },
 
   async loadSlides() {
@@ -53,6 +64,7 @@ window.VLearningPresentation = {
   goTo(index) {
     if (!this.slides.length) return;
     this.currentIndex = (index + this.slides.length) % this.slides.length;
+    sessionStorage.setItem(SLIDE_INDEX_STORAGE_KEY, this.currentIndex);
     this.update();
   },
 

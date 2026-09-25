@@ -31,7 +31,7 @@
   min-height: 5.2rem;
   padding: 1rem 1.7rem 1.1rem;
   border-bottom: 1px solid var(--demo-line);
-  background-color: #e6f1ff;
+  background-color: #0A2540;
 }
 
 .demo-kicker {
@@ -46,7 +46,7 @@
 
 .demo-header h1 {
   max-width: none;
-  color: var(--demo-ink);
+  color: white;
   font-size: 1.8rem;
   font-weight: 800;
   line-height: 1.15;
@@ -54,7 +54,7 @@
 
 .demo-header p {
   margin-top: 0.5rem;
-  color: var(--demo-muted);
+  color: #F8FAFC;
   font-size: 0.9rem;
 }
 
@@ -94,6 +94,7 @@
   padding-bottom: 0.8rem;
   border-bottom: 1px solid #edf1f4;
 }
+
 .flow-index {
   flex: 0 0 auto;
   padding: 0.42rem 0.58rem;
@@ -102,9 +103,11 @@
   font-size: 0.78rem;
   font-weight: 800;
 }
+
 .orange-index {
   background: var(--demo-orange);
 }
+
 .flow-card-header h2 {
   max-width: none;
   color: var(--demo-ink);
@@ -112,17 +115,20 @@
   font-weight: 800;
   line-height: 1.15;
 }
+
 .flow-card-header p {
   margin-top: 0.32rem;
   color: var(--demo-muted);
   font-size: 0.8rem;
 }
+
 .flow-group {
   display: flex;
   min-width: 0;
   flex-direction: column;
   align-items: center;
 }
+
 .flow-node {
   display: flex;
   min-width: 0;
@@ -130,6 +136,7 @@
   align-items: center;
   text-align: center;
 }
+
 .node-box {
   display: block;
   width: min(100%, 15rem);
@@ -144,6 +151,7 @@
   line-height: 1.3;
   text-align: center;
 }
+
 .flow-arrow {
   display: block;
   width: 100%;
@@ -154,40 +162,47 @@
   line-height: 0.9rem;
   text-align: center;
 }
+
 .flow-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   width: min(100%, 28rem);
 }
+
 .wide-row {
   width: 100%;
   max-width: 50rem;
   align-items: start;
   gap: 1.2rem;
 }
+
 .flow-branch {
   display: flex;
   min-width: 0;
   flex-direction: column;
   align-items: center;
 }
-.flow-branch > .flow-node,
-.flow-branch > .flow-node .node-box {
+
+.flow-branch>.flow-node,
+.flow-branch>.flow-node .node-box {
   width: 100%;
 }
+
 .parent-box {
   border-color: #e7b184;
   color: #9d5c34;
   background: #fff7f0;
   text-transform: uppercase;
 }
+
 .flow-sub-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.65rem;
   width: 100%;
 }
+
 .sm-box {
   width: 100%;
   min-height: 3rem;

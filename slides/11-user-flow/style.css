@@ -31,13 +31,13 @@
   min-height: 5.2rem;
   padding: 1rem 1.7rem 1.1rem;
   border-bottom: 1px solid var(--demo-line);
-  background-color: #efe3d5;
+  background-color: #0A2540;
 }
 
 .demo-kicker {
   display: inline-block;
   margin-bottom: 0.35rem;
-  color: var(--demo-blue);
+  color: white;
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -54,7 +54,7 @@
 
 .demo-header p {
   margin-top: 0.5rem;
-  color: var(--demo-muted);
+  color: #F8FAFC;
   font-size: 0.9rem;
 }
 
