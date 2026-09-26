@@ -1,4 +1,4 @@
-Vừa rồi và về công nghệ nền tảng, và tiếp theo là về kiến trúc và luồng hoạt động trong dự án.
+Vừa rồi và về công nghệ nền tảng, và tiếp theo là về **kiến trúc và luồng hoạt động trong dự án**.
 
 Về **kiến trúc và luồng hoạt động**, ứng dụng được tổ chức theo từng tầng từ trên xuống dưới.
 
