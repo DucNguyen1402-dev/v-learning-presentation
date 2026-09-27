@@ -4,7 +4,7 @@ Về cơ bản, sản phẩm được chia thành hai sides chính: **Học viê
 
 Ở side **Học viên**, người dùng có thể thực hiện các thao tác từ **đăng ký, đăng nhập, tìm kiếm và xem khóa học**, cho đến **thanh toán, quản lý khóa học đã mua và thông tin cá nhân**.
 
-Ở phía **Quản trị viên**, hệ thống tập trung vào việc **quản lý khóa học và người dùng**, bao gồm các thao tác thêm, cập nhật và xóa dữ liệu.
+Ở side **Quản trị viên**, hệ thống tập trung vào việc **quản lý khóa học và người dùng**, bao gồm các thao tác thêm, cập nhật và xóa dữ liệu.
 
 Như vậy, có thể hình dung V-learning gồm hai nhóm chức năng chính: **một bên phục vụ trải nghiệm học tập của người dùng, và một bên phục vụ việc quản lý, vận hành hệ thống**.
 
