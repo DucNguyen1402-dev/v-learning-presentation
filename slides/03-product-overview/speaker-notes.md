@@ -1,5 +1,1 @@
-Bây giờ chúng ta hãy cùng bắt đầu với phần đầu tiên : về **tổng quan sản phẩm** với 3 nhóm nội dung chính:
-
-- Sản phẩm và chức năng chính
-- User flow & giao diện
-- admin side & chức năng quản trị
+Bây giờ em xin phép bắt dầu với **Cấu trúc sản phẩm**. Ở nhóm nội dung này, em sẽ đi từ cái nhìn tổng quan về sản phẩm, sau đó đi qua trải nghiệm sử dụng của user, và cuối cùng là phần quản trị dành cho admin.

@@ -61,10 +61,18 @@
   background-color: #f8fafc;
   border: 1px solid #e2e8f0;
   border-radius: 10px;
+  height: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.card:hover {
+  border-color: #D1D5DB;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
 }
 
 /* Card Header */
