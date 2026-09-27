@@ -24,10 +24,8 @@
         aria-label="Danh mục công nghệ Frontend"
         role="tablist"
       >
-        <p class="nav-label" role="presentation">Các nhóm công nghệ</p>
-        <p class="nav-group-label" role="presentation">
-          1. Nền tảng phát triển
-        </p>
+        <p class="nav-label" role="presentation">Các tầng kiến trúc</p>
+        <p class="nav-group-label" role="presentation">Write & Build Time</p>
         <button
           class="tech-tab is-active"
           type="button"
@@ -37,9 +35,8 @@
           data-tech-tab="tech-panel-1"
         >
           <span class="tab-number">01</span>
-          <span><strong>Ngôn ngữ & công cụ</strong></span>
+          <span><strong>Language Foundation</strong></span>
         </button>
-        <p class="nav-group-label" role="presentation">2. Năng lực ứng dụng</p>
         <button
           class="tech-tab"
           type="button"
@@ -49,7 +46,7 @@
           data-tech-tab="tech-panel-2"
         >
           <span class="tab-number">02</span>
-          <span><strong>Routing</strong></span>
+          <span><strong>Build & Bundling</strong></span>
         </button>
         <button
           class="tech-tab"
@@ -60,7 +57,7 @@
           data-tech-tab="tech-panel-3"
         >
           <span class="tab-number">03</span>
-          <span><strong>State Management & Data Fetching</strong></span>
+          <span><strong>UI & Styling</strong></span>
         </button>
         <button
           class="tech-tab"
@@ -71,7 +68,7 @@
           data-tech-tab="tech-panel-4"
         >
           <span class="tab-number">04</span>
-          <span><strong>Form & Validation</strong></span>
+          <span><strong>State & Data</strong></span>
         </button>
         <button
           class="tech-tab"
@@ -81,40 +78,15 @@
           aria-controls="tech-panel-5"
           data-tech-tab="tech-panel-5"
         >
-          <span class="tab-number">05</span>
-          <span><strong>UI & Styling</strong></span>
-        </button>
-        <p class="nav-group-label" role="presentation">
-          3. Tiện ích & công cụ hỗ trợ
-        </p>
-        <button
-          class="tech-tab"
-          type="button"
-          role="tab"
-          aria-selected="false"
-          aria-controls="tech-panel-6"
-          data-tech-tab="tech-panel-6"
-        >
           <span class="tab-number">06</span>
-          <span><strong>Tiện ích</strong></span>
-        </button>
-        <button
-          class="tech-tab"
-          type="button"
-          role="tab"
-          aria-selected="false"
-          aria-controls="tech-panel-7"
-          data-tech-tab="tech-panel-7"
-        >
-          <span class="tab-number">07</span>
-          <span><strong>Code Quality & Standards</strong></span>
+          <span><strong>Engineering Quality & DX</strong></span>
         </button>
       </nav>
 
       <main class="tech-content">
         <div class="content-heading">
-          <span class="eyebrow">Tổng quan công nghệ</span>
-          <span class="panel-counter" data-tech-counter>01 / 07</span>
+          <span class="eyebrow">Technology stack taxonomy</span>
+          <span class="panel-counter" data-tech-counter>01 / 05</span>
         </div>
 
         <div
@@ -126,30 +98,18 @@
           <div class="panel-title">
             <span class="step-num bg-blue">01</span>
             <div>
-              <h2>Ngôn ngữ & công cụ phát triển</h2>
-              <p>Các ngôn ngữ và công cụ chính được sử dụng trong dự án.</p>
+              <h2>Language Foundation</h2>
+              <p>
+                Ngôn ngữ định nghĩa cú pháp, kiểu dữ liệu và logic nền tảng.
+              </p>
             </div>
           </div>
-          <div class="panel-grid panel-grid-three">
+          <div class="panel-grid panel-grid-one">
             <div class="tech-item">
               <div class="tech-logo ts-bg">TS</div>
               <div class="tech-info">
                 <h3>TypeScript</h3>
-                <p>Ngôn ngữ chính, type-safe toàn bộ codebase</p>
-              </div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo react-bg">⚛️</div>
-              <div class="tech-info">
-                <h3>React 19</h3>
-                <p>Thư viện UI</p>
-              </div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo vite-bg">⚡</div>
-              <div class="tech-info">
-                <h3>Vite</h3>
-                <p>Build tool & dev server (nhanh, HMR)</p>
+                <p>Ngôn ngữ chính, kiểm soát kiểu dữ liệu toàn codebase.</p>
               </div>
             </div>
           </div>
@@ -165,20 +125,23 @@
           <div class="panel-title">
             <span class="step-num bg-purple">02</span>
             <div>
-              <h2>Routing</h2>
-              <p>Điều hướng người dùng qua các không gian Admin và Client.</p>
+              <h2>Build & Bundling Infrastructure</h2>
+              <p>Phục vụ môi trường phát triển và đóng gói ứng dụng.</p>
             </div>
           </div>
-          <div class="panel-grid panel-grid-one">
+          <div class="panel-grid panel-grid-two">
             <div class="tech-item">
-              <div class="tech-logo router-bg">🔀</div>
-              <div class="tech-info text-center">
-                <h3>React Router</h3>
-                <span class="version">(v7/v8)</span>
-                <p>
-                  Điều hướng, phân tách route theo layout Admin/Client, có
-                  RouteGuard
-                </p>
+              <div class="tech-logo vite-bg">⚡</div>
+              <div class="tech-info">
+                <h3>Vite</h3>
+                <p>Dev server, HMR và build ứng dụng cho production.</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo tailwind-bg">TW</div>
+              <div class="tech-info">
+                <h3>@tailwindcss/vite</h3>
+                <p>Tích hợp Tailwind CSS v4 vào quy trình build của Vite.</p>
               </div>
             </div>
           </div>
@@ -194,35 +157,62 @@
           <div class="panel-title">
             <span class="step-num bg-teal">03</span>
             <div>
-              <h2>State Management & Data Fetching</h2>
-              <p>Quản lý dữ liệu từ API và trạng thái dùng chung.</p>
+              <h2>UI & Styling System</h2>
+              <p>
+                Các công nghệ dựng giao diện, điều hướng và định hình trải
+                nghiệm.
+              </p>
             </div>
           </div>
           <div class="panel-grid panel-grid-three">
-            <div class="tech-item">
-              <div class="tech-logo query-bg">🔴</div>
-              <div class="tech-info text-center">
-                <h3>TanStack React Query <span class="version">(v5)</span></h3>
-                <p>Quản lý server state, caching, fetching API</p>
+            <div class="tech-item-group">
+              <div class="tech-item">
+                <div class="tech-logo react-bg">⚛️</div>
+                <div class="tech-info text-center">
+                  <h3>React 19</h3>
+                  <p>Thư viện component và render giao diện.</p>
+                </div>
+              </div>
+
+              <div class="tech-item">
+                <div class="tech-logo router-bg">RR</div>
+                <div class="tech-info text-center">
+                  <h3>React Router DOM</h3>
+                  <p>Điều hướng các route Admin và Client.</p>
+                </div>
               </div>
             </div>
-            <div class="tech-item">
-              <div class="tech-logo react-bg">⚛️</div>
-              <div class="tech-info text-center">
-                <h3>React Context API</h3>
-                <p>
-                  Quản lý state cục bộ (Auth, Provider theo layout Admin/Client)
-                </p>
+            <div class="tech-item-group">
+              <div class="tech-item">
+                <div class="tech-logo tailwind-bg">TW</div>
+                <div class="tech-info text-center">
+                  <h3>Tailwind CSS v4</h3>
+                  <p>Utility-first styling cho giao diện.</p>
+                </div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo cva-bg">CVA</div>
+                <div class="tech-info text-center">
+                  <h3>Radix UI</h3>
+                  <p>Accessible, headless UI primitives.</p>
+                </div>
               </div>
             </div>
-            <div class="tech-item">
-              <div class="tech-logo axios-bg">AX</div>
-              <div class="tech-info text-center">
-                <h3>Axios</h3>
-                <p>
-                  HTTP client, có interceptor tự động đính kèm Access Token vào
-                  request
-                </p>
+            <div class="tech-item-group">
+              <div class="tech-item">
+                <div class="tech-logo radix-bg">UI</div>
+                <div class="tech-info text-center">
+                  <h3>clsx & tailwind-merge</h3>
+                  <p>Kết hợp và xử lý className.</p>
+                </div>
+              </div>
+
+              <div class="tech-item">
+                <div class="tech-logo lucide-bg">LC</div>
+                <div class="tech-info text-center">
+                  <h3>Lucide React & Motion</h3>
+                  <p>Biểu tượng và hiệu ứng chuyển động.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -238,23 +228,46 @@
           <div class="panel-title">
             <span class="step-num bg-orange">04</span>
             <div>
-              <h2>Form & Validation</h2>
-              <p>Luồng nhập liệu rõ ràng, nhất quán và có kiểm tra.</p>
+              <h2>State & Data Layer</h2>
+              <p>
+                Quản lý dữ liệu server, trạng thái ứng dụng và dữ liệu biểu mẫu.
+              </p>
             </div>
           </div>
-          <div class="panel-grid panel-grid-two">
+          <div class="panel-grid panel-grid-three">
+            <div class="tech-item">
+              <div class="tech-logo query-bg">RQ</div>
+              <div class="tech-info text-center">
+                <h3>TanStack React Query <span class="version">(v5)</span></h3>
+                <p>Fetch, cache và đồng bộ server state.</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo react-bg">⚛️</div>
+              <div class="tech-info text-center">
+                <h3>React Context API</h3>
+                <p>Chia sẻ Auth state và provider theo khu vực Admin/Client.</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-logo axios-bg">AX</div>
+              <div class="tech-info text-center">
+                <h3>Axios</h3>
+                <p>HTTP client; interceptor đính kèm Access Token.</p>
+              </div>
+            </div>
             <div class="tech-item">
               <div class="tech-logo form-bg">📝</div>
               <div class="tech-info text-center">
                 <h3>React Hook Form</h3>
-                <p>Quản lý form</p>
+                <p>Quản lý dữ liệu và trạng thái biểu mẫu.</p>
               </div>
             </div>
             <div class="tech-item">
-              <div class="tech-logo val-bg">🛡️</div>
+              <div class="tech-logo val-bg">✓</div>
               <div class="tech-info text-center">
                 <h3>Validation rules</h3>
-                <p>Tự viết theo module (login/register)</p>
+                <p>Quy tắc tự viết theo từng module như login/register.</p>
               </div>
             </div>
           </div>
@@ -268,111 +281,10 @@
           hidden
         >
           <div class="panel-title">
-            <span class="step-num bg-blue">05</span>
+            <span class="step-num bg-blue">06</span>
             <div>
-              <h2>UI & Styling</h2>
-              <p>Hệ thống giao diện và các primitive có thể tái sử dụng.</p>
-            </div>
-          </div>
-          <div class="panel-grid panel-grid-three">
-            <div class="tech-item">
-              <div class="tech-logo tailwind-bg">🌊</div>
-              <div class="tech-info text-center">
-                <h3>
-                  Tailwind CSS v4
-                  <span class="sub-dim">(@tailwindcss/vite)</span>
-                </h3>
-                <p>Utility-first CSS</p>
-              </div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo radix-bg">⚪</div>
-              <div class="tech-info text-center">
-                <h3>Radix UI</h3>
-                <p>Headless UI components (accessible primitives)</p>
-              </div>
-            </div>
-
-            <div class="sub-row">
-              <div class="tech-item small">
-                <span class="mini-tag blue-text">tailwind-merge</span>
-                <div class="text-center">
-                  <strong>tailwind-merge</strong>
-                  <p>Hợp nhất className</p>
-                </div>
-              </div>
-              <div class="tech-item small">
-                <span class="mini-tag purple-text">clsx</span>
-                <div class="text-center">
-                  <strong>clsx</strong>
-                  <p>Xử lý className linh hoạt</p>
-                </div>
-              </div>
-              <div class="tech-item small">
-                <span class="mini-icon">🔲</span>
-                <div class="text-center">
-                  <strong>Lucide React</strong>
-                  <p>Icon set</p>
-                </div>
-              </div>
-              <div class="tech-item small">
-                <span class="mini-icon">🟣</span>
-                <div class="text-center">
-                  <strong
-                    >Motion
-                    <span class="sub-dim">(Framer Motion mới)</span></strong
-                  >
-                  <p>Animation</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="tech-panel"
-          id="tech-panel-6"
-          role="tabpanel"
-          data-tech-panel
-          hidden
-        >
-          <div class="panel-title">
-            <span class="step-num bg-cyan">06</span>
-            <div>
-              <h2>Tiện ích khác</h2>
-              <p>Những công cụ nhỏ hỗ trợ các workflow chính.</p>
-            </div>
-          </div>
-          <div class="panel-grid panel-grid-two">
-            <div class="tech-item">
-              <div class="tech-logo date-bg">📅</div>
-              <div class="tech-info">
-                <h3>date-fns</h3>
-                <p>Xử lý ngày tháng</p>
-              </div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo qr-bg">🔲</div>
-              <div class="tech-info">
-                <h3>qrcode</h3>
-                <p>Sinh mã QR</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="tech-panel"
-          id="tech-panel-7"
-          role="tabpanel"
-          data-tech-panel
-          hidden
-        >
-          <div class="panel-title">
-            <span class="step-num bg-blue">07</span>
-            <div>
-              <h2>Code Quality & Standards</h2>
-              <p>Giữ codebase dễ đọc, nhất quán và dễ mở rộng.</p>
+              <h2>Engineering Quality & DX</h2>
+              <p>Chuẩn hóa mã nguồn và hỗ trợ phát hiện vấn đề cấu trúc.</p>
             </div>
           </div>
           <div class="panel-grid panel-grid-three">

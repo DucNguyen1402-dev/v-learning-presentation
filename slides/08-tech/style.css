@@ -327,6 +327,11 @@
   border-radius: 0.65rem;
   background: #f8fafc;
 }
+.tech-item-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
 
 .tech-logo {
   display: grid;
@@ -394,6 +399,14 @@
   background: #eff6ff;
 }
 
+.radix-bg {
+  color: #f97316;
+  background: #fef3c7;
+}
+.lucide-bg {
+  color: #64748b;
+  background: #f1f5f9;
+}
 .date-bg {
   color: #0284c7;
   background: #e0f2fe;

@@ -1,6 +1,6 @@
-Vừa rồi và về công nghệ nền tảng, và tiếp theo là về **kiến trúc và luồng hoạt động trong dự án**.
+.... về **kiến trúc và luồng hoạt động của ứng dụng**.
 
-Về **kiến trúc và luồng hoạt động**, ứng dụng được tổ chức theo từng tầng từ trên xuống dưới.
+Như trên màn hình có thể thấy, ứng dụng được tổ chức theo từng tầng từ trên xuống dưới.
 
 Luồng bắt đầu từ **main**, đi qua **App** và **AppProvider**, nơi quản lý các **state và context dùng chung** như loading, toast, modal và thông tin người dùng.
 
