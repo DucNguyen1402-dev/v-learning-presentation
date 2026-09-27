@@ -8,15 +8,14 @@
   justify-content: center;
   min-width: 0;
   min-height: 0;
-  justify-self: stretch;
-  padding-top: 1rem;
+  padding: 1rem 0;
   color: var(--demo-ink);
 }
 
 .demo-window {
   width: 1180px;
   min-width: 0;
-  height: 54rem;
+  height: 60rem;
   min-height: 0;
   overflow: hidden;
   border: 1px solid #d5e0e8;
@@ -32,13 +31,13 @@
   min-height: 5.2rem;
   padding: 1rem 1.7rem 1.1rem;
   border-bottom: 1px solid var(--demo-line);
-  background: #ffffff;
+  background-color: #0A2540;
 }
 
 .demo-kicker {
   display: inline-block;
   margin-bottom: 0.35rem;
-  color: var(--demo-blue);
+  color: var(--demo-orange);
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -47,7 +46,7 @@
 
 .demo-header h1 {
   max-width: none;
-  color: var(--demo-ink);
+  color: white;
   font-size: 1.8rem;
   font-weight: 800;
   line-height: 1.15;
@@ -55,39 +54,16 @@
 
 .demo-header p {
   margin-top: 0.5rem;
-  color: var(--demo-muted);
+  color: #F8FAFC;
   font-size: 0.9rem;
-}
-
-.demo-meta {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-  color: #8b9aa6;
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.demo-counter {
-  padding-left: 0.7rem;
-  border-left: 1px solid var(--demo-line);
-  color: var(--demo-ink);
-  font-weight: 800;
-}
-
-.status-dot {
-  width: 0.45rem;
-  height: 0.45rem;
-  border-radius: 50%;
-  background: #43bd83;
-  box-shadow: 0 0 0 0.2rem rgb(67 189 131 / 14%);
 }
 
 .flow-container {
   display: block;
   width: 100%;
+  height: 100%;
   padding: 1.15rem;
+  overflow: hidden;
 }
 
 .flow-card {
@@ -95,35 +71,24 @@
   flex-direction: column;
   align-items: center;
   min-width: 0;
+  height: 100%;
   padding: 1.15rem 1.25rem 1.1rem;
   border: 1px solid var(--demo-line);
   border-radius: 0.8rem;
-  background: #ffffff;
+  background: #eef6fb;
   box-shadow: 0 0.55rem 1.5rem rgb(18 41 58 / 4%);
 }
 
-.flow-card>.flow-node,
-.flow-card>.flow-arrow,
-.flow-card>.flow-row,
-.flow-card>.flow-group,
-.flow-card>.flow-card-header {
-  width: 100%;
-}
-
-.flow-card[hidden] {
-  display: none;
-}
-
 .flow-card.is-active {
-  border-color: rgb(45 120 212 / 18%);
-  box-shadow: 0 0.8rem 1.8rem rgb(38 93 154 / 10%);
-  animation: demo-panel-reveal 240ms ease-out both;
+  border-color: rgb(233 120 59 / 22%);
+  box-shadow: 0 0.8rem 1.8rem rgb(154 86 38 / 10%);
 }
 
 .flow-card-header {
   display: flex;
   gap: 0.9rem;
   align-items: flex-start;
+  width: 100%;
   min-height: 3.1rem;
   margin-bottom: 1rem;
   padding-bottom: 0.8rem;
@@ -137,10 +102,6 @@
   color: #ffffff;
   font-size: 0.78rem;
   font-weight: 800;
-}
-
-.blue-index {
-  background: var(--demo-blue);
 }
 
 .orange-index {
@@ -182,39 +143,23 @@
   padding: 0.78rem 1rem;
   border: 1px solid #cbdbe8;
   border-radius: 0.45rem;
-  color: #24568d;
+  color: #333;
   background: #f8fbfd;
   box-shadow: 0 0.2rem 0.55rem rgb(31 71 103 / 6%);
   font-size: 0.86rem;
   font-weight: 700;
   line-height: 1.3;
   text-align: center;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
-}
-
-.node-box:hover {
-  border-color: #8eb5d5;
-  background: #f1f7fb;
-  transform: translateY(-1px);
 }
 
 .flow-arrow {
   display: block;
   width: 100%;
   height: 0.9rem;
-  margin: 0.12rem 0;
+  margin: 0.5rem 0;
   color: #91a4b3;
   font-size: 1rem;
   line-height: 0.9rem;
-  text-align: center;
-}
-
-.split-arrow {
-  width: min(100%, 14rem);
-  height: 1rem;
-  margin: 0.15rem 0;
-  font-size: 0.95rem;
-  letter-spacing: 0.1rem;
   text-align: center;
 }
 
@@ -223,25 +168,6 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   width: min(100%, 28rem);
-}
-
-.flow-row .node-box {
-  width: 100%;
-}
-
-.accent-box {
-  border-color: #edb38f;
-  border-style: dashed;
-  color: #aa653d;
-  background: #fff8f3;
-}
-
-.accent-box small {
-  display: block;
-  margin-top: 0.2rem;
-  color: #b48770;
-  font-size: 0.7rem;
-  font-weight: 600;
 }
 
 .wide-row {
@@ -284,53 +210,4 @@
   color: #536b7b;
   background: #fbfcfd;
   font-size: 0.75rem;
-}
-
-@keyframes demo-panel-reveal {
-  from {
-    opacity: 0;
-    transform: translateY(0.35rem);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@media (max-width: 30rem) {
-  .flowchart-section {
-    width: calc(100vw - 1rem);
-    padding: 0.5rem;
-  }
-
-  .demo-header {
-    min-height: 4rem;
-    padding: 0.8rem 1rem;
-  }
-
-  .demo-meta {
-    gap: 0.35rem;
-    font-size: 0.52rem;
-  }
-
-  .flow-container {
-    padding: 0.6rem;
-  }
-
-  .flow-card {
-    padding: 0.75rem;
-  }
-
-  .demo-window {
-    min-height: 45rem;
-  }
-
-  .wide-row {
-    gap: 0.5rem;
-  }
-
-  .node-box {
-    font-size: 0.64rem;
-  }
 }

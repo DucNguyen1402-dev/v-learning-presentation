@@ -17,6 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   document.addEventListener("keydown", (event) => {
+    if (
+      event.key === "ArrowLeft" ||
+      event.key === "ArrowRight" ||
+      event.key === " "
+    ) {
+      event.preventDefault();
+    }
+
     if (event.key === "ArrowLeft")
       presentation.goTo(presentation.currentIndex - 1);
     if (event.key === "ArrowRight" || event.key === " ")

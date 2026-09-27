@@ -1,1 +1,1 @@
-Sau đây, em xin bắt đầu với nhóm nội dung đầu tiên, giới thiệu về **tổng quan sản phẩm, trải nghiệm người dùng và chức năng quản trị**.
+Bây giờ em xin phép bắt dầu với **Cấu trúc sản phẩm**. Ở nhóm nội dung này, em sẽ đi từ cái nhìn tổng quan về sản phẩm, sau đó đi qua trải nghiệm sử dụng của user, và cuối cùng là phần quản trị dành cho admin.

@@ -3,18 +3,13 @@
   --architecture-muted: #6d7c89;
   --architecture-line: #d8e3eb;
   --architecture-accent: #3b82f6;
-  display: flex;
   width: min(1160px, calc(100vw - 2rem));
-  min-width: 0;
-  min-height: 0;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 0;
   padding: clamp(1rem, 3vw, 2.5rem);
   color: var(--architecture-ink);
   border: 1px solid var(--architecture-line);
-  background: #fafafa;
-
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #eff6ff;
 }
 
 .architecture-header {
@@ -133,44 +128,4 @@
 
 .architecture-container .wide-node {
   width: min(100%, 34rem);
-}
-
-@media (max-width: 40rem) {
-  .architecture-container {
-    width: calc(100vw - 1rem);
-    padding: 0.75rem;
-  }
-
-  .architecture-flow {
-    padding-top: 0.9rem;
-  }
-
-  .architecture-container .split-container {
-    gap: 0.5rem;
-  }
-
-  .architecture-container .node {
-    min-height: 2.25rem;
-    padding: 0.65rem 0.5rem;
-  }
-
-  .architecture-container .node strong {
-    font-size: 0.68rem;
-  }
-
-  .architecture-container .node p,
-  .architecture-container .node span {
-    font-size: 0.58rem;
-  }
-
-  .architecture-container .arrow {
-    height: 0.85rem;
-    font-size: 0.75rem;
-    line-height: 0.85rem;
-  }
-
-  .architecture-container .branch-arrow {
-    font-size: 0.75rem;
-    line-height: 0.8rem;
-  }
 }
