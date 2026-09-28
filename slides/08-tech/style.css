@@ -312,6 +312,7 @@
 
 .panel-grid-one {
   max-width: 32rem;
+  margin: 0 auto;
 }
 
 .tech-item {

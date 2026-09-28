@@ -1,7 +1,8 @@
 Và bây giờ em sẽ chuyển sang phần **demo Admin và các tính năng quản trị**. Trên màn hình có thể thấy, **Admin Side** tập trung quản lý hai nhóm chính là **khóa học** và **người dùng**.
 
-- Ở **quản lý khóa học** có các thao tác chính như **thêm, sửa, xóa khóa học**, quản lý **ghi danh** và **ghi danh học viên**.
-- Còn ở **quản lý người dùng**, cũng có các thao tác **thêm, sửa, xóa**, đồng thời có thêm tính năng **xem danh sách các khóa học mà người dùng đã ghi danh**.
+Với tính năng **quản lý khóa học**, giáo vụ có thể thực hiện các thao tác từ **thêm, sửa, xóa khóa học**, đến **quản lý ghi danh và ghi danh học viên**.
+
+- Với tính năng **quản lý người dùng**, giáo vụ có thể thực hiện **thêm, sửa, xóa người dùng**, đồng thời **xem danh sách các khóa học mà người dùng đã ghi danh**.
 
 Do thời gian có hạn nên em sẽ lướt qua từng tính năng, tập trung vào các thao tác chính mà không giải thích quá nhiều. Trước tiên, em sẽ logout tài khoản user và chuyển sang tài khoản admin mà em đã tạo trước đó:
 **[bấm logout và login với tài khoản admin]**
@@ -19,7 +20,7 @@ Do thời gian có hạn nên em sẽ lướt qua từng tính năng, tập trun
   Tương tự em sẽ xóa chính khóa học này,
   **[Bấm xóa]**
 
-- Đó là các thao tác cập nhật cơ bản. Còn bây giờ, em sẽ chuyển sang một thao tác nâng cao hơn một chút là **quản lý ghi danh**. Ở đây, em sẽ chọn một khóa học bất kỳ để thực hiện.
+- Đó là các thao tác cập nhật cơ bản. Còn bây giờ, em sẽ chuyển sang một thao tác khác là **quản lý ghi danh**. Ở đây, em sẽ chọn một khóa học bất kỳ để thực hiện.
 
 **[Bấm quản lý khóa học ghi danh của khóa học X]**
 Tại đây hiển thị danh sách học viên đã đăng ký thành công và đang chờ xác thực ghi danh.
@@ -38,7 +39,7 @@ lúc này ghi danh thành công và em sẽ qua xem thử phần quản lý ghi 
 **[Bấm back và vào phần quản lý ghi danh]**
 tại đây em thử tìm tài khoản vừa mới ghi danh
 **[gõ tài khoản X]**
-Và đấy, tài khoản X đã xuất hiện trong danh sách ghi danh thành công.
+Và đấy, **tài khoản X** đã xuất hiện trong danh sách ghi danh với trạng thái **đăng ký thành công**.
 và vừa rồi cũng là thao tác cuối cùng của quản lý khóa học. giờ em sẽ chuyển qua **quản lý người dùng**
 **[Bấm chọn quản lý người dùng]**
 

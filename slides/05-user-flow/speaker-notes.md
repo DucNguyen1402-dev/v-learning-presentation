@@ -35,6 +35,6 @@ Ngoài ra, tại phần chi tiết khóa học học viên cũng có thể **yê
 
 Như vậy, trên đây là flow chính trong trải nghiệm của học viên.
 
-Phần chức năng còn lại của hệ thống là **quản trị**, em sẽ trình bày tiếp qua
+Phần còn lại của hệ thống là **quản trị**, em sẽ trình bày tiếp qua
 **[Bấm chuyển flow]**
 **Admin Side và giao diện quản trị**.
