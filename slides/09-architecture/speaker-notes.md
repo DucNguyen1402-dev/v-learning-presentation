@@ -7,3 +7,7 @@ Luồng bắt đầu từ **main**, đi qua **App** và **AppProvider**, nơi qu
 Sau đó, luồng đi vào **AppRoutes** và được tách thành hai nhánh chính là **Admin Route Tree** và **Client Route Tree**. Mỗi nhánh đều có **Route Guard** để kiểm tra quyền truy cập trước khi render **Admin Layout** hoặc **Client Layout**.
 
 Bên dưới các layout là các **domain modules** độc lập như quản lý khóa học, quản lý người dùng và trang cá nhân. Các module này sử dụng lại những thành phần và chức năng chung từ **Shared Layer**, bao gồm UI, session, storage và **API Client** dùng để giao tiếp với server.
+
+Và như vậy phần trình bày vừa rồi đã kết thúc phần nội dung lớn thứ 2 về "tổng quan kỹ thuật" trong buổi trình bày hôm nay,
+
+**[bấm chuyển slide]**

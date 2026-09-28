@@ -327,6 +327,7 @@
   border-radius: 0.65rem;
   background: #f8fafc;
 }
+
 .tech-item-group {
   display: flex;
   flex-direction: column;
@@ -335,13 +336,23 @@
 
 .tech-logo {
   display: grid;
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 3rem;
+  height: 2.5rem;
   flex: 0 0 auto;
   place-items: center;
   border-radius: 0.45rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 750;
+}
+
+.tech-logo img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.tech-logo.small img {
+  width: 70%;
+  object-fit: contain;
 }
 
 .ts-bg {
@@ -349,8 +360,7 @@
   background: #3b82f6;
 }
 
-.react-bg {
-  color: #0284c7;
+.logo-bg {
   background: #e0f2fe;
 }
 
@@ -403,10 +413,12 @@
   color: #f97316;
   background: #fef3c7;
 }
+
 .lucide-bg {
   color: #64748b;
   background: #f1f5f9;
 }
+
 .date-bg {
   color: #0284c7;
   background: #e0f2fe;
