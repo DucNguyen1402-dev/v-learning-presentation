@@ -327,6 +327,14 @@
   border: 1px solid #e3eaf0;
   border-radius: 0.65rem;
   background: #f8fafc;
+  user-select: none;
+}
+
+.tech-item:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
 }
 
 .tech-item-group {

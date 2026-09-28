@@ -10,7 +10,10 @@
   border-radius: 0.5rem;
   overflow: hidden;
   background: #eff6ff;
+
 }
+
+
 
 .architecture-header {
   padding: 0 0 1.2rem;
@@ -128,4 +131,50 @@
 
 .architecture-container .wide-node {
   width: min(100%, 34rem);
+}
+
+
+.presentation-cursor {
+  position: fixed;
+  width: 28px;
+  height: 28px;
+  border: 2px solid #F59E0B;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.15s ease,
+    height 0.15s ease;
+}
+
+.presentation-cursor.clicking {
+  width: 42px;
+  height: 42px;
+}
+
+.presentation-ripple {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #F59E0B;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  transform: translate(-50%, -50%);
+  animation: ripple 0.5s ease-out forwards;
+}
+
+@keyframes ripple {
+  from {
+    opacity: 0.8;
+    width: 20px;
+    height: 20px;
+  }
+
+  to {
+    opacity: 0;
+    width: 70px;
+    height: 70px;
+  }
 }
