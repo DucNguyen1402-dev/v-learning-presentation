@@ -10,10 +10,8 @@
   border-radius: 0.5rem;
   overflow: hidden;
   background: #eff6ff;
-
+  user-select: none;
 }
-
-
 
 .architecture-header {
   padding: 0 0 1.2rem;
@@ -107,6 +105,13 @@
   text-align: center;
 }
 
+.architecture-container .branch-arrow.single {
+  width: min(13rem, 100%);
+  grid-template-columns: 1fr;
+  justify-content: center;
+  text-align: center;
+  margin: 0.5rem auto;
+}
 .architecture-container .merge-arrow {
   margin-top: 0.45rem;
 }
@@ -133,12 +138,11 @@
   width: min(100%, 34rem);
 }
 
-
 .presentation-cursor {
   position: fixed;
   width: 28px;
   height: 28px;
-  border: 2px solid #F59E0B;
+  border: 2px solid #f59e0b;
   border-radius: 50%;
   pointer-events: none;
   z-index: 99999;
@@ -157,7 +161,7 @@
   position: fixed;
   width: 20px;
   height: 20px;
-  border: 2px solid #F59E0B;
+  border: 2px solid #f59e0b;
   border-radius: 50%;
   pointer-events: none;
   z-index: 99998;
