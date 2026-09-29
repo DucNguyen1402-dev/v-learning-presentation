@@ -6,9 +6,9 @@ Luồng bắt đầu từ **điểm khởi tạo ứng dụng** là **main**.T�
 
 Từ đây, luồng đi vào **AppRoutes** và sau đó chia thành hai nhánh chính là **Client Route Tree** và **Admin Route Tree**. Mỗi nhánh đều có **Route Guard** để kiểm tra quyền truy cập trước khi đưa người dùng vào **Client Layout** hoặc **Admin Layout** tương ứng.
 
-Bên dưới các layout là các **domain module**, được tổ chức độc lập theo từng nhóm chức năng. Ví dự như Ở nhánh **client** có các nhóm như **đăng ký, đăng nhập và quản lý thông tin cá nhân**; còn ở **admin** là các nhóm như **quản lý khóa học, quản lý người dùng** cùng một số chức năng khác.
+Bên dưới các layout là các **domain module**, được phân chia theo từng nhóm chức năng của hệ thống. Ví dự như Ở nhánh **client** có các nhóm như **đăng ký, đăng nhập và quản lý thông tin cá nhân**; còn ở **admin** là các nhóm như **quản lý khóa học, quản lý người dùng** cùng một số chức năng khác.
 
-Các modules này tập trung xử lý phần giao diện và logic của từng domain một cách độc lập, đồng thời sử dụng lại những thành phần và chức năng chung từ **Shared Layer**.
+Các modules này tập trung xử lý phần giao diện và logic của từng domain, đồng thời sử dụng lại những thành phần và chức năng chung từ **Shared Layer**.
 
 **Shared Layer** là tầng dùng chung cho toàn bộ hệ thống, gồm các nhóm như **API Client, UI, session, storage, current user, cùng nhiều nhóm dùng chung khác**. Đặc biệt, trong đó **API Client** chịu trách nhiệm giao tiếp với phía **server**.
 

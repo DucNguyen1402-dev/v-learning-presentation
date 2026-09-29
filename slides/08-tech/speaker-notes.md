@@ -36,7 +36,7 @@ Và cuối cùng là tầng **Chất lượng mã nguồn & công cụ**, dự �
 
 - **ESLint** phân tích mã nguồn và phát hiện các **lỗi hoặc vi phạm quy tắc**.
 - **Prettier** tự động **định dạng mã nguồn**, giúp code **nhất quán về cách trình bày**.
-- Và **Madge** hỗ trợ **phát hiện các circular dependency** trong dự án.
+- Và **Madge** là công cụ phân tích và hỗ trợ phát hiện circular dependency trong mã nguồn.
 
 Và đó là toàn bộ các **nền tảng công nghệ và công cụ chính** được sử dụng trong dự án. Ngoài ra, dự án còn sử dụng một số thư viện và công cụ hỗ trợ khác. Tuy nhiên, do chúng có vai trò khá nhỏ và khó xếp vào tầng phân loại trên nên em không đưa vào phần này.
 
