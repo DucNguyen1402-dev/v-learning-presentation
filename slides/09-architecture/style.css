@@ -11,6 +11,7 @@
   overflow: hidden;
   background: #eff6ff;
   user-select: none;
+  cursor: none;
 }
 
 .architecture-header {
@@ -66,6 +67,18 @@
   text-align: center;
 }
 
+.architecture-container .wrapped-node {
+  display: block;
+  margin-top: 0.45rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #bfd4e6;
+  border-radius: 0.5rem;
+  background: #f9fafb;
+  font-size: 0.72rem;
+  color: var(--architecture-ink);
+  text-align: center;
+}
+
 .architecture-container .node h3 {
   color: #24568d;
   font-size: 0.82rem;
@@ -112,6 +125,7 @@
   text-align: center;
   margin: 0.5rem auto;
 }
+
 .architecture-container .merge-arrow {
   margin-top: 0.45rem;
 }
@@ -150,6 +164,7 @@
   transition:
     width 0.15s ease,
     height 0.15s ease;
+  user-select: none;
 }
 
 .presentation-cursor.clicking {

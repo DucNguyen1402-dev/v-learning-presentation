@@ -13,12 +13,10 @@
     <div class="node">main.tsx</div>
     <div class="arrow" aria-hidden="true">↓</div>
 
-    <div class="node">App.tsx</div>
-    <div class="arrow" aria-hidden="true">↓</div>
-
     <div class="node">
       <h3 class="text-center">AppProvider</h3>
       <p>(Layout / Loading / Modal / Toast / AppLock / CurrentUser)</p>
+      <div class="wrapped-node">App.tsx</div>
     </div>
     <div class="arrow" aria-hidden="true">↓</div>
 
@@ -32,23 +30,6 @@
     <div class="split-container">
       <div class="branch">
         <div class="node">
-          <strong>Admin Route Tree</strong>
-          <span>+ AdminRouteGuard</span>
-        </div>
-        <div class="arrow" aria-hidden="true">↓</div>
-        <div class="node">
-          <strong>Admin Layout</strong>
-          <span>(layouts/admin)</span>
-        </div>
-        <div class="arrow" aria-hidden="true">↓</div>
-        <div class="node">
-          <strong>Modules</strong>
-          <span>(courses, users, profile... - admin)</span>
-        </div>
-      </div>
-
-      <div class="branch">
-        <div class="node">
           <strong>Client Route Tree</strong>
           <span>+ ClientRouteGuard</span>
         </div>
@@ -60,10 +41,24 @@
         <div class="arrow" aria-hidden="true">↓</div>
         <div class="node">
           <strong>Modules</strong>
-          <span
-            >(home, login, register, courses, personal-courses, profile,
-            user...)</span
-          >
+          <span>(login, register, courses, personal-courses, profile)</span>
+        </div>
+      </div>
+
+      <div class="branch">
+        <div class="node">
+          <strong>Admin Route Tree</strong>
+          <span>+ AdminRouteGuard</span>
+        </div>
+        <div class="arrow" aria-hidden="true">↓</div>
+        <div class="node">
+          <strong>Admin Layout</strong>
+          <span>(layouts/admin)</span>
+        </div>
+        <div class="arrow" aria-hidden="true">↓</div>
+        <div class="node">
+          <strong>Modules</strong>
+          <span>(courses, users, profile management)</span>
         </div>
       </div>
     </div>
@@ -76,8 +71,8 @@
     <div class="node wide-node">
       <h3>Shared Layer</h3>
       <p>
-        (api, ui, table, fields, session, navigation, current-user, storage,
-        theme...)
+        (Api client, ui, table, fields, session, navigation, current-user,
+        storage, theme...)
       </p>
     </div>
     <div class="arrow" aria-hidden="true">↓</div>

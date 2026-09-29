@@ -1,8 +1,8 @@
 Và bây giờ em sẽ chuyển sang phần **demo Admin và các tính năng quản trị**. Trên màn hình có thể thấy, **Admin Side** tập trung quản lý hai nhóm chính là **khóa học** và **người dùng**.
 
-Với tính năng **quản lý khóa học**, giáo vụ có thể thực hiện các thao tác từ **thêm, sửa, xóa khóa học**, đến **quản lý ghi danh và ghi danh học viên**.
+Với tính năng **quản lý khóa học**, tài khoản có quyền có thể thực hiện các thao tác từ **thêm, sửa, xóa khóa học**, đến **quản lý ghi danh và ghi danh học viên**.
 
-- Với tính năng **quản lý người dùng**, giáo vụ có thể thực hiện **thêm, sửa, xóa người dùng**, đồng thời **xem danh sách các khóa học mà người dùng đã ghi danh**.
+- Với tính năng **quản lý người dùng**, tài khoản có quyền có thể thực hiện **thêm, sửa, xóa người dùng**, đồng thời **xem danh sách các khóa học mà người dùng đã ghi danh của từng tài khoản**.
 
 Do thời gian có hạn nên em sẽ lướt qua từng tính năng, tập trung vào các thao tác chính mà không giải thích quá nhiều. Trước tiên, em sẽ logout tài khoản user và chuyển sang tài khoản admin mà em đã tạo trước đó:
 **[bấm logout và login với tài khoản admin]**
