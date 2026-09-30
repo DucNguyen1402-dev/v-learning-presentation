@@ -8,5 +8,5 @@ Về cơ bản, sản phẩm được chia thành hai sides chính: **Học viê
 
 Như vậy, nhìn tổng thể, dự án có hai nhóm chức năng chính: **một nhóm phục vụ trải nghiệm học tập của người dùng, và một nhóm phục vụ việc quản lý, vận hành hệ thống.**
 
-Từ tổng quan này, em sẽ đi vào **user flow và giao diện của phía Học viên**.
+Từ tổng quan này, em sẽ đi vào nội dung tiếp theo về **user flow và giao diện của phía Học viên**.
 **[Bấm chuyển slide]**

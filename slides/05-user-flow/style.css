@@ -11,6 +11,8 @@
   border-radius: 1.25rem;
   background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 58%, #e0f2fe 100%);
   box-shadow: 0 1.5rem 3rem rgb(15 23 42 / 25%);
+  cursor: none;
+  user-select: none;
 }
 
 .user-flow-slide.is-active {
@@ -177,7 +179,6 @@
   min-height: 0;
   flex: 1;
   overflow: hidden;
-  cursor: default;
   scrollbar-width: none;
   touch-action: pan-y;
   user-select: none;
@@ -187,9 +188,7 @@
   display: none;
 }
 
-.flow-viewport.is-dragging {
-  cursor: default;
-}
+
 
 .flow-track {
   position: relative;
@@ -315,4 +314,37 @@
   .flow-gallery-toolbar {
     align-items: flex-start;
   }
+}
+
+
+.presentation-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f59e0b;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.15s ease,
+    height 0.15s ease;
+  user-select: none;
+}
+
+.presentation-cursor.clicking {
+  width: 36px;
+  height: 36px;
+}
+
+.presentation-ripple {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f59e0b;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  transform: translate(-50%, -50%);
+  animation: ripple 0.5s ease-out forwards;
 }

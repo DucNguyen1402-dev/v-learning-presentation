@@ -1,1 +1,1 @@
-Bây giờ em xin phép bắt dầu với **Cấu trúc sản phẩm**. Ở phần này, em sẽ đi từ cái nhìn tổng quan về sản phẩm, sau đó đi qua trải nghiệm sử dụng của user, và cuối cùng là phần quản trị dành cho admin.
+Bây giờ em xin phép bắt dầu với phần đầu tiên về **Cấu trúc sản phẩm**. Ở phần này, em sẽ đi từ cái nhìn tổng quan về sản phẩm, sau đó đi qua trải nghiệm sử dụng của user, và cuối cùng là phần quản trị dành cho admin.
