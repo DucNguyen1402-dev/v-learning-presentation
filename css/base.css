@@ -9,6 +9,11 @@ button {
   cursor: pointer;
 }
 
+.has-presentation-cursor,
+.has-presentation-cursor * {
+  cursor: none;
+}
+
 .eyebrow {
   color: var(--color-accent-dark);
   font-size: 0.75rem;

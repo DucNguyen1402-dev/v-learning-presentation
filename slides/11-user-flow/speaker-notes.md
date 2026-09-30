@@ -31,6 +31,6 @@ Tại trang chi tiết thì bao gồm thông tin khóa học, danh sách bài h�
 - tiếp tục học với danh sách bài học : **[bấm vào bài học bất kì]**, hiện tại tính năng này chưa triển khai **[bấm back]**
 - hoặc lựa chọn khác là hủy đăng ký khóa học : **[bấm hủy đăng ký]**, Sau khi hủy đăng ký, khóa học sẽ được xóa khỏi danh sách khóa học cá nhân.
 
-và đó là toàn bộ flow chính của một học ở phía client.
+và đó là toàn bộ **luồng sửa dụng chính** của một người dùng ở **phía học viên**.
 
 **[bấm Chuyển slide]**

@@ -2,9 +2,8 @@
   const cursor = document.querySelector(".presentation-cursor");
 
   const isCursorSlideActive = () =>
-    document.querySelector(
-      ".architecture-container.is-active, .user-flow-slide.is-active",
-    ) !== null;
+    document.querySelector("[data-slide].has-presentation-cursor.is-active") !==
+    null;
 
   document.addEventListener("mousemove", (event) => {
     cursor.style.left = `${event.clientX}px`;

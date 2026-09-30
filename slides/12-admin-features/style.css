@@ -1,4 +1,4 @@
-.flowchart-section {
+.admin-flowchart-section {
   --demo-ink: #17212b;
   --demo-muted: #71808d;
   --demo-line: #dce5eb;
@@ -31,7 +31,7 @@
   min-height: 5.2rem;
   padding: 1rem 1.7rem 1.1rem;
   border-bottom: 1px solid var(--demo-line);
-  background-color: #0A2540;
+  background-color: #0a2540;
 }
 
 .demo-kicker {
@@ -54,7 +54,7 @@
 
 .demo-header p {
   margin-top: 0.5rem;
-  color: #F8FAFC;
+  color: #f8fafc;
   font-size: 0.9rem;
 }
 
@@ -184,8 +184,8 @@
   align-items: center;
 }
 
-.flow-branch>.flow-node,
-.flow-branch>.flow-node .node-box {
+.flow-branch > .flow-node,
+.flow-branch > .flow-node .node-box {
   width: 100%;
 }
 
@@ -210,4 +210,50 @@
   color: #536b7b;
   background: #fbfcfd;
   font-size: 0.75rem;
+}
+
+.presentation-cursor {
+  position: fixed;
+  width: 28px;
+  height: 28px;
+  border: 2px solid #f59e0b;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.15s ease,
+    height 0.15s ease;
+  user-select: none;
+}
+
+.presentation-cursor.clicking {
+  width: 42px;
+  height: 42px;
+}
+
+.presentation-ripple {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f59e0b;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  transform: translate(-50%, -50%);
+  animation: ripple 0.5s ease-out forwards;
+}
+
+@keyframes ripple {
+  from {
+    opacity: 0.8;
+    width: 20px;
+    height: 20px;
+  }
+
+  to {
+    opacity: 0;
+    width: 70px;
+    height: 70px;
+  }
 }
