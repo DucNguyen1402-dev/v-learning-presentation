@@ -1,1 +1,1 @@
-Phần thuyết trình của em hôm nay đến đây là kết thúc. Em xin nhường lại phần hỏi đáp cho anh chị giảng viên ạ.
+Phần trình bày của em hôm nay đến đây là kết thúc. Bây giờ em xin nhường lại phần đặt câu hỏi cho anh chị giảng viên.

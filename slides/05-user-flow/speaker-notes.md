@@ -31,7 +31,7 @@ và tại danh sách này, học viên có thể chọn một khóa học đã �
 **[Bấm chuyển flow]**
 bên trong trang chi tiết hiển thị **thông tin tổng quan, danh sách bài học và tiến độ học tập**.
 
-Tại đây, học viên có thể **chọn bài học mong muốn để bắt đầu học**. Tuy nhiên, do hiện tại chưa có dữ liệu nội dung bài học nên **phần triển khai trang bài học hiện vẫn chưa được thực hiện**.
+Tại đây, học viên có thể bắt đầu học bằng cách chọn một bài học trong danh sách. Tuy nhiên, do hiện tại chưa có dữ liệu nội dung bài học nên **trang bài học hiện vẫn chưa được thực hiện**.
 
 Ngoài ra, tại phần chi tiết khóa học học viên cũng có thể **yêu cầu hủy đăng ký khóa học** nếu có nhu cầu.
 

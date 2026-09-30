@@ -1,4 +1,4 @@
-Bắt đầu với **user flow**, trên màn hình là sơ đồ mô tả tổng quan luồng sử dụng chính của phía user. Vì phần này em đã trình bày ở phần trước, nên ở đây em sẽ không đi lại chi tiết mà chỉ sơ đồ hóa lại để có cái nhìn tổng quan trước khi vào demo trực tiếp.
+Bắt đầu với **user flow**, trên màn hình là sơ đồ mô tả tổng quan luồng sử dụng chính của phía user, mà cụ thể ở đây chính là một học viên. Vì phần này em đã trình bày ở phần trước, nên ở đây em sẽ không đi lại chi tiết mà chỉ sơ đồ hóa lại để có cái nhìn tổng quan trước khi vào demo trực tiếp.
 
 Và bây giờ em xin bắt đầu phần demo:
 **[mở tab với link vercel]**
@@ -13,7 +13,7 @@ sau khi đăng ký xong thì em đang được chuyển đến trang đăng nh�
 **[nhập thông tin]**
 và bấm đăng nhập,
 **[bấm đăng nhập]**
-sau khi đăng nhập thành công thì em được điều hướng về Home, tại đây em qua xem **danh sách khóa học cá nhân** trước
+sau khi đăng nhập thành công thì em được điều hướng về **trang chủ**, tại đây em qua xem **danh sách khóa học cá nhân** trước
 **[bấm nav sang khóa học của tôi]**
 Vì hiện tại tài khoản của em chưa có khóa học nào, nên em sẽ chọn **Khám phá khóa học** để bắt đầu tìm khóa học phù hợp.
 
@@ -22,15 +22,15 @@ lúc này em được điều hướng đến trang danh sách khóa học, tạ
 **[bấm xem chi tiết khóa học X]**
 Tại trang chi tiết chứa **thông tin mô tả và giá khóa học,** lúc này nếu thấy phù hợp thì em sẽ chọn **đăng ký khóa học**
 **[bấm đăng ký]**
-Em sẽ được chuyển hướng đến **trang thanh toán giả lập,** có **thông tin tài khoản đăng ký, phương thức thanh toán và tóm tắt đăng ký**, lúc này em bấm **xác nhận thanh toán**:
+Lúc này em sẽ được chuyển hướng đến **trang thanh toán giả lập,** có **thông tin tài khoản đăng ký, phương thức thanh toán và tóm tắt đăng ký**, lúc này em bấm **xác nhận thanh toán**:
 **[bấm xác nhận thanh toán]**
-nếu đăng ký và thanh toán thành công sẽ được chuyển về trang **khóa học cá nhân**, tại đây sẽ hiện ra khóa học mới thêm vào, em vào xem chi tiết khóa học:
+nếu đăng ký và thanh toán thành công sẽ được chuyển về trang **khóa học cá nhân**, tại đây sẽ có một khóa học mới đăng ký được thêm vào, em vào xem chi tiết khóa học:
 **[bấm xem chi tiết khóa học]**
-Tại trang chi tiết thì bao gồm thông tin khóa học, tiến độ và danh sách bài học, tại đây học viên có 2 lựa chọn khác:
+Tại trang chi tiết thì bao gồm thông tin khóa học, danh sách bài học và tiến độ học tập. Tại đây em sẽ có 2 lựa chọn khác:
 
 - tiếp tục học với danh sách bài học : **[bấm vào bài học bất kì]**, hiện tại tính năng này chưa triển khai **[bấm back]**
-- hoặc lựa chọn khác là hủy ghi danh khóa học : **[bấm hủy ghi danh]**, Sau khi hủy ghi danh, khóa học sẽ được xóa khỏi danh sách khóa học cá nhân.
+- hoặc lựa chọn khác là hủy đăng ký khóa học : **[bấm hủy đăng ký]**, Sau khi hủy đăng ký, khóa học sẽ được xóa khỏi danh sách khóa học cá nhân.
 
-và đó là toàn bộ flow chính của một user ở phía client.
+và đó là toàn bộ flow chính của một học ở phía client.
 
 **[bấm Chuyển slide]**

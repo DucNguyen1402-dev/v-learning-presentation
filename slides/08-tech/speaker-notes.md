@@ -1,4 +1,4 @@
-Đầu tiên, về **nền tảng công nghệ Frontend**, dự án em được chia thành **5 tầng** chính. Mỗi tầng sẽ bao gồm một số công nghệ và công cụ khác nhau, do thời gian có hạn, em sẽ chỉ **lướt nhanh qua các tầng**.
+Đầu tiên, về **nền tảng công nghệ Frontend**, dự án được chia thành **5 tầng** chính. Mỗi tầng sẽ bao gồm một số công nghệ và công cụ khác nhau, do thời gian có hạn, em sẽ chỉ **lướt nhanh qua các tầng**.
 
 ### 1. Language Foundation
 

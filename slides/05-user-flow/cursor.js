@@ -1,17 +1,19 @@
 (() => {
   const cursor = document.querySelector(".presentation-cursor");
 
-  const isFlowSlideActive = () =>
-    document.querySelector(".user-flow-slide.is-active") !== null;
+  const isCursorSlideActive = () =>
+    document.querySelector(
+      ".architecture-container.is-active, .user-flow-slide.is-active",
+    ) !== null;
 
   document.addEventListener("mousemove", (event) => {
     cursor.style.left = `${event.clientX}px`;
     cursor.style.top = `${event.clientY}px`;
-    cursor.hidden = !isFlowSlideActive();
+    cursor.hidden = !isCursorSlideActive();
   });
 
   document.addEventListener("mousedown", (event) => {
-    if (!isFlowSlideActive()) return;
+    if (!isCursorSlideActive()) return;
 
     cursor.classList.add("clicking");
 
