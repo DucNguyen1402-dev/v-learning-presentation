@@ -15,23 +15,22 @@ Từ trang chủ có thể chuyển sang **“Danh sách khóa học”**, nơi 
 Sau khi tìm được khóa học phù hợp, học viên có thể chọn **xem thông tin chi tiết**,
 **[Bấm chuyển flow]**
 bên trong bao gồm nội dung và các thông tin liên quan đến khóa học.
-Tại đây nếu muốn tham gia khóa học, học viên có thể chọn **đăng ký khóa học**.
+Tại đây, học viên có thể lựa chọn **đăng ký khóa học**.
 
 **[Bấm chuyển flow]**
 
 Khi bấm chọn **đăng ký khóa học** thì học viên sẽ được chuyển đến **trang thanh toán** với **thông tin tài khoản đang đăng nhập** và **thông tin thanh toán tương ứng**.
 
 Sau khi bấm thanh toán và đăng ký thành công,
-
 **[Bấm chuyển flow]**
 khóa học sẽ được đưa vào **danh sách khóa học cá nhân**, nơi học viên có thể quản lý các khóa học mình đã đăng ký.
 
-và tại danh sách này, học viên có thể vào xem chi tiết một khóa học mà mình đđã đăng ký,
+và tại danh sách này, học viên sẽ chọn một khóa học đã đăng ký để truy cập vào trang chi tiết,
 
 **[Bấm chuyển flow]**
 bên trong trang chi tiết hiển thị **thông tin tổng quan, danh sách bài học và tiến độ học tập**.
 
-Tại đây, học viên có thể bắt đầu học bằng cách chọn một bài học trong danh sách. Tuy nhiên, do hiện tại chưa có dữ liệu nội dung bài học nên **trang bài học hiện vẫn chưa được thực hiện**.
+Tại đây, học viên có 2 lựa chọn, hoặc bắt đầu học bằng cách chọn một bài học trong danh sách. Tuy nhiên, do hiện tại chưa có dữ liệu nên tính năng này vẫn chưa được triển khai.
 
 Ngoài ra, tại phần chi tiết khóa học học viên cũng có thể **yêu cầu hủy đăng ký khóa học** nếu có nhu cầu.
 
