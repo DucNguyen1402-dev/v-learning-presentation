@@ -1,4 +1,4 @@
-Với **Admin Side**, hệ thống gồm hai nhóm chức năng chính là **quản lý khóa học** và **quản lý người dùng**, dành cho các tài khoản được cấp quyền **Admin hoặc Giáo vụ**.
+Với **chức năng quan trị**, hệ thống gồm hai nhóm chức năng chính là **quản lý khóa học** và **quản lý người dùng**, dành cho các tài khoản được cấp quyền **Admin hoặc Giáo vụ**.
 
 - Với **quản lý khóa học**, tài khoản được cấp quyền có thể thực hiện các thao tác từ cơ bản như **tìm kiếm, lọc** cho đến **thêm, cập nhật và xóa khóa học**. Bên cạnh đó, tài khoản còn có thể **quản lý thông tin, xác thực và ghi danh người dùng** trong từng khóa học.
 

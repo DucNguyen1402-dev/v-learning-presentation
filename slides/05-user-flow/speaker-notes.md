@@ -1,4 +1,4 @@
-Về **luồng sử dụng của người dùng** thì ở đây em có mô phỏng một hành trình sử dụng tương đối đầy đủ của một học viên, với 8 bước và phần bên phải là giao diện tương ứng giúp hình dung rõ hơn.
+Về **luồng sử dụng** thì ở đây em có mô phỏng một hành trình sử dụng tương đối đầy đủ của một học viên, với 8 bước và phần bên phải là giao diện tương ứng giúp hình dung rõ hơn.
 
 Bắt đầu với bước đầu tiên trong hành trình học viên đó là **“Đăng nhập”**. Ở bước này, học viên sẽ sử dụng tài khoản đã đăng ký trước đó để đăng nhập vào hệ thống.
 
@@ -38,4 +38,4 @@ Như vậy, trên đây là luồng sử dụng chính trong trải nghiệm c�
 
 Phần còn lại của hệ thống là **quản trị**, em sẽ trình bày tiếp qua
 **[Bấm chuyển flow]**
-**Admin Side và giao diện quản trị**.
+**Chức năng & giao diện quản trị**.
