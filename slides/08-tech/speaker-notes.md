@@ -2,7 +2,7 @@
 
 ### 1. Language Foundation
 
-Tầng đầu tiên là **ngôn ngữ nền tảng**, dự án sử dụng **TypeScript** để kiểm soát **kiểu dữ liệu** trên toàn bộ mã nguồn, giúp phát hiện sớm lỗi ngay trong quá trình phát triển.
+Bắt đầu với tầng đầu tiên là **ngôn ngữ nền tảng**, dự án sử dụng **TypeScript** để kiểm soát **kiểu dữ liệu** trên toàn bộ mã nguồn, giúp phát hiện sớm lỗi ngay trong quá trình phát triển.
 
 ---
 

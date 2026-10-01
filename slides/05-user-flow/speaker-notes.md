@@ -4,7 +4,7 @@ Bắt đầu với bước đầu tiên trong hành trình học viên đó là 
 
 **[Bấm chuyển flow]**
 
-Sau khi đăng nhập thành công, học viên sẽ được chuyển đến **Trang chủ**, nơi có thể xem tổng quan nội dung và tiếp tục khám phá các khóa học.
+Sau khi đăng nhập thành công, học viên sẽ được điều hướng đến **Trang chủ**, nơi có thể xem tổng quan nội dung và tiếp tục khám phá các khóa học.
 
 **[Bấm chuyển flow]**
 
@@ -26,7 +26,7 @@ Sau khi bấm thanh toán và đăng ký thành công,
 **[Bấm chuyển flow]**
 khóa học sẽ được đưa vào **danh sách khóa học cá nhân**, nơi học viên có thể quản lý các khóa học mình đã đăng ký.
 
-và tại danh sách này, học viên có thể chọn một khóa học đã đăng ký để **xem chi tiết**,
+và tại danh sách này, học viên có thể vào xem chi tiết một khóa học mà mình đđã đăng ký,
 
 **[Bấm chuyển flow]**
 bên trong trang chi tiết hiển thị **thông tin tổng quan, danh sách bài học và tiến độ học tập**.

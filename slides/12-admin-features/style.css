@@ -10,6 +10,7 @@
   min-height: 0;
   padding: 1rem 0;
   color: var(--demo-ink);
+  user-select: none;
 }
 
 .demo-window {
@@ -184,8 +185,8 @@
   align-items: center;
 }
 
-.flow-branch > .flow-node,
-.flow-branch > .flow-node .node-box {
+.flow-branch>.flow-node,
+.flow-branch>.flow-node .node-box {
   width: 100%;
 }
 
