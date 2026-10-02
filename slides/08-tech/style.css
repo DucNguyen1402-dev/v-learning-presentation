@@ -66,7 +66,7 @@
   min-width: 0;
   max-width: none;
   color: var(--window-ink);
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 750;
   line-height: 1;
 }
@@ -344,7 +344,7 @@
   max-width: none;
   margin: 0;
   color: var(--window-ink);
-  font-size: clamp(1.5rem, 3vw, 2.35rem);
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.08;
 }
@@ -565,6 +565,7 @@
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.25;
+  max-width: none;
 }
 
 .tech-info p {
@@ -661,91 +662,244 @@
   outline: none;
 }
 
-@keyframes panel-reveal {
-  from {
-    opacity: 0;
-    transform: translateY(0.45rem);
-  }
+#tech-panel-4 .ui-tech-hierarchy {
+  display: grid;
+  gap: 1.25rem;
+}
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
+#tech-panel-4 .ui-tech-core {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+#tech-panel-4 .ui-tech-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0;
+  user-select: none;
+}
+
+#tech-panel-4 .ui-tech-card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.2s ease-in-out;
+}
+
+#tech-panel-4 .ui-tech-card-primary {
+  min-height: 140px;
+  padding: 1.25rem;
+  border: 1px solid rgb(45 212 191 / 35%);
+  border-radius: 1rem;
+  background: linear-gradient(
+    135deg,
+    rgb(20 184 166 / 14%),
+    rgb(255 255 255 / 3%)
+  );
+}
+
+#tech-panel-4 .ui-tech-card-primary .tech-logo {
+  flex: 0 0 52px;
+  width: 52px;
+  height: 52px;
+}
+
+#tech-panel-4 .ui-tech-label {
+  color: #5eead4;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+#tech-panel-4 .ui-tech-card-primary h3 {
+  margin: 0.25rem 0;
+  text-align: left;
+}
+
+#tech-panel-4 .ui-tech-support {
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid rgb(255 255 255 / 12%);
+  border-radius: 1rem;
+  background: rgb(255 255 255 / 3%);
+}
+
+#tech-panel-4 .ui-tech-support-heading {
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#tech-panel-4 .ui-tech-support-heading h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  max-width: none;
+}
+
+#tech-panel-4 .ui-tech-support-heading p {
+  margin-top: 0.25rem;
+  opacity: 0.7;
+}
+
+#tech-panel-4 .ui-tech-support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+#tech-panel-4 .ui-tech-card-support {
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background: rgb(255 255 255 / 4%);
+}
+
+#tech-panel-4 .ui-tech-card-support .tech-logo {
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+}
+
+#tech-panel-4 .ui-tech-card-support h4 {
+  margin: 0;
+  text-align: left;
+}
+
+#tech-panel-4 .ui-tech-card-support p {
+  margin-top: 0.25rem;
+  opacity: 0.7;
+}
+
+@media (max-width: 700px) {
+  #tech-panel-4 .ui-tech-core,
+  #tech-panel-4 .ui-tech-support-grid {
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 48rem) {
-  .window-body {
-    grid-template-columns: 1fr;
-  }
-
-  .tech-nav {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    border-right: 0;
-    border-bottom: 1px solid var(--window-line);
-  }
-
-  .nav-label,
-  .nav-group-label,
-  .nav-footer {
-    grid-column: 1 / -1;
-  }
-
-  .nav-footer {
-    margin-top: 0.5rem;
-  }
-
-  .tech-tab {
-    grid-template-columns: 1.4rem 1fr;
-  }
-
-  .tech-tab small {
-    display: none;
-  }
-
-  .panel-grid-three,
-  .sub-row {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .sub-row {
-    grid-column: 1 / -1;
-  }
+#tech-panel-5 .state-data-hierarchy {
+  display: grid;
+  gap: 1.25rem;
 }
 
-@media (max-width: 30rem) {
-  .tech-stack-container {
-    padding: 0.5rem;
-  }
+#tech-panel-5 .state-data-core {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
 
-  .window-status {
-    display: none;
-  }
+#tech-panel-5 .state-data-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0;
+}
 
-  .window-bar {
-    min-height: 3.5rem;
-    padding: 0.65rem 0.85rem;
-  }
+#tech-panel-5 .state-data-card-primary {
+  min-height: 150px;
+  padding: 1.25rem;
+  border: 1px solid rgb(251 146 60 / 35%);
+  border-radius: 1rem;
+  background: linear-gradient(
+    135deg,
+    rgb(249 115 22 / 14%),
+    rgb(255 255 255 / 3%)
+  );
+}
 
-  .tech-nav {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+#tech-panel-5 .state-data-icon {
+  display: grid;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid rgb(255 255 255 / 14%);
+  border-radius: 0.85rem;
+  background: rgb(255 255 255 / 7%);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
 
-  .tech-content {
-    padding: 1.25rem;
-  }
+#tech-panel-5 .state-data-card-primary .state-data-icon {
+  color: #fed7aa;
+  border-color: rgb(251 146 60 / 35%);
+  background: rgb(249 115 22 / 14%);
+}
 
-  .panel-grid-three,
-  .panel-grid-two,
-  .sub-row {
-    grid-template-columns: 1fr;
-  }
+#tech-panel-5 .state-data-label {
+  color: #fdba74;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
 
-  .sub-row {
-    grid-column: auto;
-  }
+#tech-panel-5 .state-data-copy h3,
+#tech-panel-5 .state-data-copy h4,
+#tech-panel-5 .state-data-copy p {
+  margin: 0;
+  text-align: left;
+}
 
-  .panel-title h2 {
-    font-size: 1.4rem;
-  }
+#tech-panel-5 .state-data-copy h3 {
+  margin-top: 0.25rem;
+  font-size: 1.05rem;
+}
+
+#tech-panel-5 .state-data-copy h4 {
+  font-size: 0.9rem;
+}
+
+#tech-panel-5 .state-data-copy p {
+  margin-top: 0.35rem;
+  opacity: 0.72;
+  font-size: 0.82rem;
+}
+
+#tech-panel-5 .state-data-support {
+  padding: 1rem;
+  border: 1px solid rgb(255 255 255 / 12%);
+  border-radius: 1rem;
+  background: rgb(255 255 255 / 3%);
+}
+
+#tech-panel-5 .state-data-support-heading {
+  margin-bottom: 0.8rem;
+}
+
+#tech-panel-5 .state-data-support-heading h3,
+#tech-panel-5 .state-data-support-heading p {
+  margin: 0;
+  text-align: left;
+}
+
+#tech-panel-5 .state-data-support-heading h3 {
+  font-size: 0.95rem;
+}
+
+#tech-panel-5 .state-data-support-heading p {
+  margin-top: 0.25rem;
+  opacity: 0.7;
+  font-size: 0.8rem;
+}
+
+#tech-panel-5 .state-data-support-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+#tech-panel-5 .state-data-card-secondary {
+  padding: 0.85rem;
+  border-radius: 0.75rem;
+  background: rgb(255 255 255 / 4%);
+}
+
+#tech-panel-5 .state-data-card-secondary .state-data-icon {
+  flex-basis: 40px;
+  width: 40px;
+  height: 40px;
+  font-size: 0.68rem;
 }

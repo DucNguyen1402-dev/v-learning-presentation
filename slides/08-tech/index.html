@@ -234,57 +234,70 @@
             <div>
               <h2>Giao diện & kiểu dáng</h2>
               <p>
-                Các công nghệ dựng giao diện, điều hướng và định hình trải
-                nghiệm.
+                Công nghệ cốt lõi định hình cấu trúc và phong cách giao diện.
               </p>
             </div>
           </div>
-          <div class="panel-grid panel-grid-three">
-            <div class="tech-item">
-              <div class="tech-logo small logo-bg">
-                <img src="./slides/08-tech/logo/react.png" />
-              </div>
-              <div class="tech-info text-center">
-                <h3>React 19</h3>
-                <p>Thư viện component và render giao diện.</p>
-              </div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo small logo-bg">
-                <img
-                  src="./slides/08-tech/logo/tw.png"
-                  alt="Tailwind CSS Logo"
-                />
-              </div>
-              <div class="tech-info text-center">
-                <h3>Tailwind CSS v4</h3>
-                <p>Utility-first styling cho giao diện.</p>
-              </div>
+
+          <div class="ui-tech-hierarchy">
+            <div class="ui-tech-core" aria-label="Công nghệ cốt lõi">
+              <article class="ui-tech-card ui-tech-card-primary">
+                <div class="tech-logo small logo-bg">
+                  <img src="./slides/08-tech/logo/react.png" alt="React" />
+                </div>
+                <div class="tech-info">
+                  <span class="ui-tech-label">UI framework</span>
+                  <h3>React 19</h3>
+                  <p>Thư viện component và render giao diện.</p>
+                </div>
+              </article>
+
+              <article class="ui-tech-card ui-tech-card-primary">
+                <div class="tech-logo small logo-bg">
+                  <img src="./slides/08-tech/logo/tw.png" alt="Tailwind CSS" />
+                </div>
+                <div class="tech-info">
+                  <span class="ui-tech-label">Styling system</span>
+                  <h3>Tailwind CSS v4</h3>
+                  <p>Utility-first styling để xây dựng giao diện.</p>
+                </div>
+              </article>
             </div>
 
-            <div class="tech-item">
-              <div class="tech-logo logo-bg">UI</div>
-              <div class="tech-info text-center">
-                <h3>clsx & tailwind-merge</h3>
-                <p>Kết hợp và xử lý className.</p>
+            <section
+              class="ui-tech-support"
+              aria-labelledby="ui-tech-support-title"
+            >
+              <div class="ui-tech-support-heading">
+                <h3 id="ui-tech-support-title">Công cụ hỗ trợ</h3>
               </div>
-            </div>
 
-            <div class="tech-item">
-              <div class="tech-logo logo-bg">LC</div>
-              <div class="tech-info text-center">
-                <h3>Lucide React</h3>
-                <p>Thư viện icon cho React.</p>
-              </div>
-            </div>
+              <div class="ui-tech-support-grid">
+                <article class="ui-tech-card ui-tech-card-support">
+                  <div class="tech-logo logo-bg" aria-hidden="true">UI</div>
+                  <div class="tech-info">
+                    <h4>clsx &amp; tailwind-merge</h4>
+                    <p>Kết hợp và xử lý className.</p>
+                  </div>
+                </article>
 
-            <div class="tech-item">
-              <div class="tech-logo logo-bg">MO</div>
-              <div class="tech-info text-center">
-                <h3>Motion</h3>
-                <p>Thư viện animation cho React.</p>
+                <article class="ui-tech-card ui-tech-card-support">
+                  <div class="tech-logo logo-bg" aria-hidden="true">LC</div>
+                  <div class="tech-info">
+                    <h4>Lucide React</h4>
+                    <p>Thư viện icon cho React.</p>
+                  </div>
+                </article>
+
+                <article class="ui-tech-card ui-tech-card-support">
+                  <div class="tech-logo logo-bg" aria-hidden="true">MO</div>
+                  <div class="tech-info">
+                    <h4>Motion</h4>
+                    <p>Thư viện animation cho React.</p>
+                  </div>
+                </article>
               </div>
-            </div>
+            </section>
           </div>
         </div>
 
@@ -304,35 +317,58 @@
               </p>
             </div>
           </div>
-          <div class="panel-grid panel-grid-three">
-            <div class="tech-item">
-              <div class="tech-logo logo-bg">RQ</div>
-              <div class="tech-info text-center">
-                <h3>TanStack React Query <span class="version">(v5)</span></h3>
-                <p>Fetch, cache và đồng bộ server state.</p>
+          <div class="state-data-hierarchy">
+            <section class="state-data-core" aria-label="Thành phần chính">
+              <article class="state-data-card state-data-card-primary">
+                <span class="state-data-icon" aria-hidden="true">RQ</span>
+                <div class="state-data-copy">
+                  <span class="state-data-label">Server state</span>
+                  <h3>
+                    TanStack React Query <span class="version">(v5)</span>
+                  </h3>
+                  <p>Fetch, cache và đồng bộ dữ liệu từ server.</p>
+                </div>
+              </article>
+
+              <article class="state-data-card state-data-card-primary">
+                <span class="state-data-icon" aria-hidden="true">CTX</span>
+                <div class="state-data-copy">
+                  <span class="state-data-label">Shared application state</span>
+                  <h3>React Context API</h3>
+                  <p>
+                    Chia sẻ Auth state và provider theo khu vực Admin/Client.
+                  </p>
+                </div>
+              </article>
+            </section>
+
+            <section
+              class="state-data-support"
+              aria-labelledby="state-data-support-title"
+            >
+              <div class="state-data-support-heading">
+                <h3 id="state-data-support-title">Thành phần hỗ trợ</h3>
+                <p>Hỗ trợ gọi API và quản lý dữ liệu biểu mẫu.</p>
               </div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo logo-bg">⚛️</div>
-              <div class="tech-info text-center">
-                <h3>React Context API</h3>
-                <p>Chia sẻ Auth state và provider theo khu vực Admin/Client.</p>
+
+              <div class="state-data-support-list">
+                <article class="state-data-card state-data-card-secondary">
+                  <span class="state-data-icon" aria-hidden="true">AX</span>
+                  <div class="state-data-copy">
+                    <h4>Axios</h4>
+                    <p>HTTP client với interceptor đính kèm Access Token.</p>
+                  </div>
+                </article>
+
+                <article class="state-data-card state-data-card-secondary">
+                  <span class="state-data-icon" aria-hidden="true">FORM</span>
+                  <div class="state-data-copy">
+                    <h4>React Hook Form</h4>
+                    <p>Quản lý dữ liệu và trạng thái biểu mẫu.</p>
+                  </div>
+                </article>
               </div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo logo-bg">AX</div>
-              <div class="tech-info text-center">
-                <h3>Axios</h3>
-                <p>HTTP client; interceptor đính kèm Access Token.</p>
-              </div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo logo-bg">📝</div>
-              <div class="tech-info text-center">
-                <h3>React Hook Form</h3>
-                <p>Quản lý dữ liệu và trạng thái biểu mẫu.</p>
-              </div>
-            </div>
+            </section>
           </div>
         </div>
 
