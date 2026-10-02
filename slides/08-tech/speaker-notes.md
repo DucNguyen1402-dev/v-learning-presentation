@@ -2,25 +2,27 @@
 
 ### 1. Language Foundation
 
-Bắt đầu với tầng đầu tiên là **“Ngôn ngữ nền tảng”**. Đây là tầng **đặt nền tảng về ngôn ngữ và cách mã nguồn được xây dựng**. Với dự án này, **TypeScript** được sử dụng làm ngôn ngữ chính để **xây dựng ứng dụng**, đồng thời giúp kiểm soát **kiểu dữ liệu** trên toàn bộ mã nguồn, qua đó **phát hiện sớm các lỗi ngay trong quá trình phát triển**.
+Bắt đầu với tầng đầu tiên là **“Ngôn ngữ nền tảng”**. Đây là tầng **đặt nền tảng về ngôn ngữ và cách mã nguồn được xây dựng**. Với dự án này, **TypeScript** được sử dụng làm ngôn ngữ chính để **xây dựng ứng dụng**, đồng thời ngôn ngữ này cung cấp cơ chế **kiểm soát kiểu dữ liệu trên toàn bộ mã nguồn**, giúp **phát hiện sớm các lỗi ngay trong quá trình phát triển**.
 
 ### 2. Build & Bundling Infrastructure
 
-Tầng tiếp theo là **“Công cụ phát triển và đóng gói”**. Đây là tầng phụ trách **hỗ trợ quá trình phát triển, build và chuẩn bị ứng dụng để triển khai**. Cụ thể , Ở tầng này, dự án sử dụng **Vite** để chạy ứng dụng trong quá trình phát triển và build phiên bản production trước khi triển khai lên **Vercel**.
+Tầng tiếp theo là **Công cụ phát triển và đóng gói**. Đây là tầng phụ trách **hỗ trợ quá trình phát triển, build và chuẩn bị ứng dụng để triển khai**.
 
-Ngoài ra, **plugin Tailwind CSS** được sử dụng để tích hợp **Tailwind CSS** vào **quy trình build của Vite**.
+Ở tầng này, dự án sử dụng **Vite** làm công cụ chính để **chạy ứng dụng trong quá trình phát triển và build phiên bản production** trước khi triển khai lên **Vercel**.
+
+Bên cạnh đó, **plugin tailwindcss cho vite** được sử dụng như một **thành phần hỗ trợ**, giúp tích hợp **Tailwind CSS** vào **quy trình build của Vite**.
 
 ### 3. UI & Styling System
 
 Tiếp theo là **“Giao diện & kiểu dáng”**. Đây là tầng phụ trách **xây dựng giao diện và cách người dùng tương tác với hệ thống**.
 
-Ở tầng này, dự án sử dụng hai công nghệ chính là **React** và **Tailwind CSS**.
+Ở tầng này, dự án sử dụng hai công nghệ chính bao gồm:
 
-**React** được sử dụng để xây dựng giao diện theo mô hình **component**, giúp chia giao diện thành các thành phần nhỏ, dễ quản lý và tái sử dụng trong toàn dự án.
+Đầu tiên là Thư viện **React** được sử dụng để xây dựng giao diện theo mô hình **component**, giúp chia giao diện thành các thành phần nhỏ, dễ quản lý và tái sử dụng trong toàn dự án.
 
-**Tailwind CSS** đảm nhiệm phần **styling**, giúp xây dựng bố cục và định dạng giao diện một cách linh hoạt.
+Thứ hai là **Tailwind CSS**, được sử dụng để **thiết kế và định dạng giao diện cho ứng dụng** dựa trên **lớp tiện ích**, giúp **việc xây dựng giao diện** trở nên **linh hoạt và dễ dàng**.
 
-Bên cạnh hai công nghệ chính, dự án sử dụng thêm một số **công cụ hỗ trợ** như **clsx** và **tailwind-merge** hỗ trợ quản lý và xử lý `className`; **Lucide React** cung cấp hệ thống **icon**; còn **Motion** được sử dụng để tạo các **hiệu ứng chuyển cảnh và chuyển động cho giao diện**.
+Bên cạnh hai thành phần, còn có một số **thành phần khác** hỗ trợ tham gia vào quá trình xây dựng giao diện như **clsx** và **tailwind-merge** hỗ trợ quản lý và xử lý `className`; **Lucide React** cung cấp hệ thống **icon**; và **Motion** được sử dụng để tạo các **hiệu ứng chuyển cảnh và chuyển động cho giao diện**.
 
 ---
 
@@ -28,17 +30,17 @@ Bên cạnh hai công nghệ chính, dự án sử dụng thêm một số **cô
 
 Kế tiếp là tầng **“Quản lý trạng thái và dữ liệu”**. Đây là tầng phụ trách việc **lấy, quản lý và chia sẻ dữ liệu trong ứng dụng**.
 
-Ở tầng này, dự án sử dụng hai thành phần chính là **TanStack React Query** và **React Context API**.
+Ở tầng này, dự án sử dụng hai thành phần chính gồm :
 
-- **TanStack React Query** được sử dụng để quản lý **server state**, hỗ trợ lấy, lưu trữ, caching và đồng bộ dữ liệu từ server.
+- Thư viện **TanStack React Query** được sử dụng để quản lý **server state**, hỗ trợ lấy, lưu trữ, caching và đồng bộ dữ liệu từ server.
 
-- **React Context API** được sử dụng để quản lý và chia sẻ **global UI state**, đồng thời cung cấp các context dùng chung trong toàn ứng dụng.
+- **React Context API** là một cơ chế để quản lý và chia sẻ **global UI state**, đồng thời cung cấp các context dùng chung trong toàn ứng dụng.
 
-Bên cạnh đó, dự án sử dụng thêm một số **công cụ hỗ trợ**. **Axios** đảm nhiệm việc gửi request đến API, còn **React Hook Form** hỗ trợ quản lý form và validation, với các quy tắc được tổ chức theo từng module.
+Tương tự như một số tầng trước đó , ở tầng này cũng có một số **thành phần** hỗ trựo khác tham gia vào **quản lý trạng thái & dữ liệu** như **Axios** đảm nhiệm việc gửi request đến API, còn **React Hook Form** hỗ trợ quản lý form và validation, với các quy tắc được tổ chức theo từng module.
 
 ### 6. Engineering Quality & DX
 
-Và cuối cùng là tầng **“Chất lượng mã nguồn & công cụ”**. Đây là tầng **hỗ trợ kiểm soát chất lượng, tính nhất quán và cấu trúc của mã nguồn trong quá trình phát triển**. Ở tầng này, dự án sử dụng:
+Và cuối cùng là tầng **“Chất lượng mã nguồn & công cụ”**. Đây là tầng **hỗ trợ kiểm soát chất lượng, tính nhất quán và cấu trúc của mã nguồn trong quá trình phát triển**. Cụ thể Ở tầng này, dự án sử dụng:
 
 - **ESLint** phân tích mã nguồn và phát hiện các **lỗi hoặc vi phạm quy tắc**.
 - **Prettier** tự động **định dạng mã nguồn**, giúp code **nhất quán về cách trình bày**.

@@ -1,4 +1,4 @@
-Và bây giờ em sẽ chuyển sang phần demo **Các chức năng quản trị ở khu vực admin**. Trên màn hình có thể thấy, **Khu vực admin** tập trung quản lý hai nhóm chính là **khóa học** và **người dùng**.
+Và bây giờ em sẽ chuyển sang phần demo **Các chức năng quản trị ở khu vực admin**. Trên màn hình có thể thấy, **Khu vực admin** tập trung quản lý hai nhóm chính là **khóa học** và **người dùng** dành cho các tài khoản được cấp quyền tương ứng.
 
 Với tính năng **quản lý khóa học**, tài khoản có quyền có thể thực hiện các thao tác từ **thêm, cập nhật, xóa khóa học**, đến **quản lý và ghi danh học viên**.
 
@@ -35,7 +35,7 @@ Và bây giờ xem sẽ tìm và xóa khóa mình đã tạo trước đó
 
 - Và đó là các thao tác cập nhật cơ bản. Còn bây giờ, em sẽ chuyển sang một thao tác khác là **quản lý ghi danh**. Ở đây, em sẽ chọn khóa học vừa cập nhật trước đó và vào **quản lý ghi danh**.
 
-**[Bấm quản lý khóa học ghi danh của khóa học X]**
+**[Bấm quản lý khóa học ghi danh của khóa học "đằng sau những API"]**
 Tại đây hiển thị **danh sách học viên đã ghi danh thành công và đang chờ xác thực ghi danh**.
 
 - Với học viên đã ghi danh, em có thể **hủy ghi danh**.
@@ -79,3 +79,5 @@ và vừa rồi cũng là thao tác cuối cùng của tính năng quản lý kh
   Và đó là tất cả các thao tác với **quản lý người dùng** đồng thời cũng kết thúc phần **demo admin và tính năng quản trị** cũng như phần nội dung **demo cho dự án**.
 
   **[bấm chuyển slide]**
+
+dohoangpixel

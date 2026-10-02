@@ -32,7 +32,7 @@ bên trong trang chi tiết hiển thị **thông tin tổng quan, danh sách b�
 
 Tại đây, học viên có 2 lựa chọn, hoặc bắt đầu học bằng cách chọn một bài học trong danh sách. Tuy nhiên, do hiện tại chưa có dữ liệu nên tính năng này vẫn chưa được triển khai.
 
-Ngoài ra, tại phần chi tiết khóa học học viên cũng có thể **yêu cầu hủy đăng ký khóa học** nếu có nhu cầu.
+Ngoài ra, tại phần chi tiết khóa học học viên cũng có thể **yêu cầu hủy đăng ký khóa học** nếu có nhu cầu, sau khi hủy thì khóa học sẽ bị xóa ra khỏi **danh sách khóa học cá nhân**.
 
 Như vậy, trên đây là luồng sử dụng chính trong trải nghiệm của học viên.
 

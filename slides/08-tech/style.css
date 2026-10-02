@@ -587,6 +587,16 @@
   min-width: 0;
 }
 
+#tech-panel-3 .build-tool-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s,
+    transform 0.3s;
+  cursor: pointer;
+}
+
 #tech-panel-3 .build-tool-card .tech-info {
   align-items: flex-start;
 }
@@ -800,7 +810,16 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  user-select: none;
   min-width: 0;
+}
+
+#tech-panel-4 .ui-tech-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.4s,
+    box-shadow 0.4s;
 }
 
 #tech-panel-4 .ui-tech-card-primary {
@@ -915,7 +934,6 @@
 }
 
 @media (max-width: 850px) {
-
   #tech-panel-4 .ui-tech-core,
   #tech-panel-4 .ui-tech-support-grid {
     grid-template-columns: 1fr;
@@ -944,6 +962,14 @@
   align-items: center;
   gap: 1rem;
   min-width: 0;
+}
+#tech-panel-5 .state-data-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.4s,
+    box-shadow 0.4s;
+  user-select: none;
 }
 
 #tech-panel-5 .state-data-card-primary {

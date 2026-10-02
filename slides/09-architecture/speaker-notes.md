@@ -8,7 +8,7 @@ Từ đây, luồng đi vào **AppRoutes** và sau đó chia thành hai nhánh c
 
 Bên dưới các layout là các **module chức năng**, được tổ chức theo những chức năng mà hệ thống yêu cầu. Ví dụ, ở nhánh **client** có các module như **đăng ký, đăng nhập, quản lý khóa học và thông tin cá nhân**; còn ở nhánh **admin** có các module phục vụ **quản lý khóa học, và quản lý người dùng**.
 
-Các module này tập trung xử lý **giao diện và logic của từng chức năng**, đồng thời sử dụng lại những **thành phần và chức năng dùng chung** từ **Shared Layer**.
+Các module này tập trung xử lý **giao diện và logic của từng chức năng**, đồng thời sử dụng lại những **thành phần dùng chung** từ **Shared Layer**.
 
 Về **Shared Layer** thì đây là tầng dùng chung cho toàn bộ hệ thống, gồm các nhóm như **API Client, UI, session, storage, current user, cùng nhiều nhóm dùng chung khác**. Đặc biệt, trong đó **API Client** chịu trách nhiệm giao tiếp với phía **server**.
 
