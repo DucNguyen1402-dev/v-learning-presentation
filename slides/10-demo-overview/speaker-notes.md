@@ -1,1 +1,1 @@
-Và bây giờ em sẽ qua phần nội dung lớn cuối cùng là **demo luồng sử dụng và các tính năng chính trong hệ thống**, cụ thể là **luồng sử dụng của một học viên** và **các chức năng quản trị của admin**.
+Và bây giờ, em sẽ chuyển sang phần nội dung lớn cuối cùng: **demo luồng sử dụng và các tính năng chính của hệ thống**. Cụ thể ở đây là **luồng sử dụng của học viên** và **các chức năng quản trị ở khu vực admin**.

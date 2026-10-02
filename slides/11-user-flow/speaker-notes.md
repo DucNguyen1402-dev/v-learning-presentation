@@ -1,4 +1,4 @@
-Bắt đầu với **user flow**, trên màn hình là sơ đồ mô tả tổng quan luồng sử dụng chính của một user, mà cụ thể ở đây chính là một học viên. Vì nội dung này này em đã trình bày ở phần trước, nên ở đây em sẽ không đi lại chi tiết mà chỉ sơ đồ hóa lại để có cái nhìn tổng quan trước khi vào demo trực tiếp.
+Bắt đầu với **Luồng sử dụng học viên**, trên màn hình là sơ đồ mô tả tổng quan luồng sử dụng chính của một user, mà cụ thể ở đây chính là một học viên. Vì nội dung này này em đã trình bày ở phần trước, nên ở đây em sẽ không đi lại chi tiết mà chỉ sơ đồ hóa lại để có cái nhìn tổng quan trước khi vào demo trực tiếp.
 
 Và bây giờ em xin bắt đầu phần demo:
 **[mở tab với link vercel]**

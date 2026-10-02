@@ -33,8 +33,8 @@
           aria-controls="tech-panel-1"
           data-tech-tab="tech-panel-1"
         >
-          <span class="tab-number">01</span>
-          <span><strong>Language Foundation</strong></span>
+          <span class="tab-number">00</span>
+          <span><strong>Tổng quan</strong></span>
         </button>
         <button
           class="tech-tab"
@@ -44,8 +44,8 @@
           aria-controls="tech-panel-2"
           data-tech-tab="tech-panel-2"
         >
-          <span class="tab-number">02</span>
-          <span><strong>Build Tools</strong></span>
+          <span class="tab-number">01</span>
+          <span><strong>Language Foundation</strong></span>
         </button>
         <button
           class="tech-tab"
@@ -55,8 +55,8 @@
           aria-controls="tech-panel-3"
           data-tech-tab="tech-panel-3"
         >
-          <span class="tab-number">03</span>
-          <span><strong>UI & Styling</strong></span>
+          <span class="tab-number">02</span>
+          <span><strong>Build Tools</strong></span>
         </button>
         <button
           class="tech-tab"
@@ -66,8 +66,8 @@
           aria-controls="tech-panel-4"
           data-tech-tab="tech-panel-4"
         >
-          <span class="tab-number">04</span>
-          <span><strong>State & Data Layer</strong></span>
+          <span class="tab-number">03</span>
+          <span><strong>UI & Styling</strong></span>
         </button>
         <button
           class="tech-tab"
@@ -77,6 +77,17 @@
           aria-controls="tech-panel-5"
           data-tech-tab="tech-panel-5"
         >
+          <span class="tab-number">04</span>
+          <span><strong>State & Data Layer</strong></span>
+        </button>
+        <button
+          class="tech-tab"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="tech-panel-6"
+          data-tech-tab="tech-panel-6"
+        >
           <span class="tab-number">05</span>
           <span><strong>Code Quality & Tooling</strong></span>
         </button>
@@ -84,7 +95,7 @@
 
       <main class="tech-content">
         <div class="content-heading">
-          <span class="panel-counter" data-tech-counter>01 / 05</span>
+          <span class="panel-counter" data-tech-counter>01 / 06</span>
         </div>
 
         <div
@@ -92,6 +103,62 @@
           id="tech-panel-1"
           role="tabpanel"
           data-tech-panel
+        >
+          <div class="panel-title">
+            <span class="step-num bg-blue">00</span>
+            <div>
+              <h2>Sơ đồ 5 tầng công nghệ Frontend</h2>
+              <p>
+                Năm tầng đảm nhiệm các vai trò khác nhau, từ nền tảng ngôn ngữ
+                đến chất lượng mã nguồn.
+              </p>
+            </div>
+          </div>
+          <ol class="tech-layer-diagram" aria-label="Năm tầng công nghệ">
+            <li class="tech-layer">
+              <span class="tech-layer-index">01</span>
+              <div class="tech-layer-copy">
+                <h3>Language Foundation</h3>
+                <p>Nền tảng kiểu dữ liệu và logic xuyên suốt ứng dụng.</p>
+              </div>
+            </li>
+            <li class="tech-layer">
+              <span class="tech-layer-index">02</span>
+              <div class="tech-layer-copy">
+                <h3>Build & Bundling Infrastructure</h3>
+                <p>Môi trường phát triển và quy trình đóng gói ứng dụng.</p>
+              </div>
+            </li>
+            <li class="tech-layer">
+              <span class="tech-layer-index">03</span>
+              <div class="tech-layer-copy">
+                <h3>UI & Styling System</h3>
+                <p>Cấu trúc giao diện, kiểu dáng và chuyển động.</p>
+              </div>
+            </li>
+            <li class="tech-layer">
+              <span class="tech-layer-index">04</span>
+              <div class="tech-layer-copy">
+                <h3>State & Data Layer</h3>
+                <p>Quản lý trạng thái, dữ liệu server và biểu mẫu.</p>
+              </div>
+            </li>
+            <li class="tech-layer">
+              <span class="tech-layer-index">05</span>
+              <div class="tech-layer-copy">
+                <h3>Engineering Quality & DX</h3>
+                <p>Kiểm tra, định dạng và duy trì chất lượng mã nguồn.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div
+          class="tech-panel"
+          id="tech-panel-2"
+          role="tabpanel"
+          data-tech-panel
+          hidden
         >
           <div class="panel-title">
             <span class="step-num bg-blue">01</span>
@@ -118,7 +185,7 @@
 
         <div
           class="tech-panel"
-          id="tech-panel-2"
+          id="tech-panel-3"
           role="tabpanel"
           data-tech-panel
           hidden
@@ -126,7 +193,7 @@
           <div class="panel-title">
             <span class="step-num bg-purple">02</span>
             <div>
-              <h2>Công cụ phát triển và đóng gói</h2>
+              <h2>Công cụ phát triển & đóng gói</h2>
               <p>Phục vụ môi trường phát triển và đóng gói ứng dụng.</p>
             </div>
           </div>
@@ -157,7 +224,7 @@
 
         <div
           class="tech-panel"
-          id="tech-panel-3"
+          id="tech-panel-4"
           role="tabpanel"
           data-tech-panel
           hidden
@@ -223,7 +290,7 @@
 
         <div
           class="tech-panel"
-          id="tech-panel-4"
+          id="tech-panel-5"
           role="tabpanel"
           data-tech-panel
           hidden
@@ -271,13 +338,13 @@
 
         <div
           class="tech-panel"
-          id="tech-panel-5"
+          id="tech-panel-6"
           role="tabpanel"
           data-tech-panel
           hidden
         >
           <div class="panel-title">
-            <span class="step-num bg-blue">06</span>
+            <span class="step-num bg-blue">05</span>
             <div>
               <h2>Chất lượng mã nguồn & công cụ</h2>
               <p>Chuẩn hóa mã nguồn và hỗ trợ phát hiện vấn đề cấu trúc.</p>

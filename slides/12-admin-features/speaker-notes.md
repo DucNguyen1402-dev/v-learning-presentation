@@ -1,4 +1,4 @@
-Và bây giờ em sẽ chuyển sang phần **demo Admin và các tính năng quản trị**. Trên màn hình có thể thấy, **Admin Side** tập trung quản lý hai nhóm chính là **khóa học** và **người dùng**.
+Và bây giờ em sẽ chuyển sang phần demo **Các chức năng quản trị ở khu vực admin**. Trên màn hình có thể thấy, **Khu vực admin** tập trung quản lý hai nhóm chính là **khóa học** và **người dùng**.
 
 Với tính năng **quản lý khóa học**, tài khoản có quyền có thể thực hiện các thao tác từ **thêm, cập nhật, xóa khóa học**, đến **quản lý và ghi danh học viên**.
 
@@ -20,7 +20,7 @@ Do thời gian có hạn nên em sẽ demo nhanh từng tính năng và không �
 
 Như vậy đã thêm thành công.
 Tiếp theo về thao tác cập nhật, thì em sẽ chọn một khóa học bất kì:
-**[Bấm edit khóa học X có loại danh mục BE]**
+**[Bấm edit khóa học "đăng sau những API" đang bị lỗi tên và chưa có hình ảnh ]**
 Tại đây em sẽ cập nhật lại các thông tin cơ bản, và sau đó bấm lưu
 
  <!-- Đằng sau những API -->
@@ -66,11 +66,13 @@ và vừa rồi cũng là thao tác cuối cùng của tính năng quản lý kh
   như vậy đã thêm thành công
 * em sẽ cập nhật thông tin người dùng vừa thêm
   **[Bấm chọn sửa thông tin người dùng X và sửa họ tên Pixel -> Đỗ Hoàng Nam]**
-  như vậy đã cập nhật thành công, và giờ em thử xóa luôn ngưởi dùng đó.
+  Đã cập nhật thành công, và giờ em thử xóa luôn ngưởi dùng đó.
 
   như vậy đã xong 3 thao tác cơ bản, giờ đến với thao tác cuối cùng là **xem danh sách khóa học đã ghi danh** ,
   **[bấm xem khóa học người dùng đầu tiên trong list]**
-  tại đây có thông tin các khóa học ghi danh bao gồm cả trạng thái **chờ xác thực** và **đã thành công**, tuy nhiên người dùng này thì không có **khóa học chờ xác thực**. Bây giờ em thử hủy ghi danh học khóa.
+  tại đây có thông tin các khóa học ghi danh bao gồm cả trạng thái **chờ xác thực** và **đã thành công**, tuy nhiên người dùng này thì không có **khóa học chờ xác thực**.
+  Em sẽ thử tìm một tài khoản khác...."mothaiba", đây rồi: ở tài khoản này có 2 khóa học trong danh sách với một trạng thái ghi danh thành công, còn một đang chờ xác nhận.
+  Bây giờ em thử hủy ghi danh học khóa.
   **[bấm hủy]**
   như vậy đã hủy ghi danh thành công.
 
