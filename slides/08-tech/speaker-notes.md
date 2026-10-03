@@ -20,9 +20,9 @@ Tiếp theo là **“Giao diện & kiểu dáng”**. Đây là tầng phụ tr�
 
 Đầu tiên là Thư viện **React** được sử dụng để xây dựng giao diện theo mô hình **component**, giúp chia giao diện thành các thành phần nhỏ, dễ quản lý và tái sử dụng trong toàn dự án.
 
-Thứ hai là **Tailwind CSS**, được sử dụng để **thiết kế và định dạng giao diện cho ứng dụng** dựa trên **lớp tiện ích**, giúp **việc xây dựng giao diện** trở nên **linh hoạt và dễ dàng**.
+Thứ hai là **Tailwind CSS**, được sử dụng để **thiết kế và định dạng giao diện cho ứng dụng** dựa trên **các lớp tiện ích**, **qua đó giúp việc xây dựng giao diện** trở nên **linh hoạt và dễ dàng**.
 
-Bên cạnh hai thành phần, còn có một số **thành phần khác** hỗ trợ tham gia vào quá trình xây dựng giao diện như **clsx** và **tailwind-merge** hỗ trợ quản lý và xử lý `className`; **Lucide React** cung cấp hệ thống **icon**; và **Motion** được sử dụng để tạo các **hiệu ứng chuyển cảnh và chuyển động cho giao diện**.
+Bên cạnh hai thành phần, còn có một số **thư viện** hỗ trợ tham gia vào quá trình xây dựng giao diện như **clsx** và **tailwind-merge** hỗ trợ quản lý và xử lý `className`; **Lucide React** cung cấp hệ thống **icon**; và **Motion** được sử dụng để tạo các **hiệu ứng chuyển cảnh và chuyển động cho giao diện**.
 
 ---
 
@@ -36,7 +36,7 @@ Kế tiếp là tầng **“Quản lý trạng thái và dữ liệu”**. Đây
 
 - **React Context API** là một cơ chế để quản lý và chia sẻ **global UI state**, đồng thời cung cấp các context dùng chung trong toàn ứng dụng.
 
-Tương tự như một số tầng trước đó , ở tầng này cũng có một số **thành phần** hỗ trựo khác tham gia vào **quản lý trạng thái & dữ liệu** như **Axios** đảm nhiệm việc gửi request đến API, còn **React Hook Form** hỗ trợ quản lý form và validation, với các quy tắc được tổ chức theo từng module.
+Tương tự như một số tầng trước đó , ở tầng này cũng có một số **thành phần** hỗ trựo khác tham gia vào **quản lý trạng thái & dữ liệu** như **Axios** đảm nhiệm việc gửi request đến API, còn **React Hook Form** hỗ trợ quản lý dữ liệu form và validation.
 
 ### 6. Engineering Quality & DX
 
@@ -49,4 +49,5 @@ Và cuối cùng là tầng **“Chất lượng mã nguồn & công cụ”**. 
 Và đó là toàn bộ các **nền tảng công nghệ và công cụ chính** được sử dụng trong dự án. Ngoài ra, dự án còn sử dụng một số thư viện và công cụ hỗ trợ khác. Tuy nhiên, do chúng có vai trò khá nhỏ và khó xếp vào tầng phân loại trên nên em không đưa vào phần này.
 
 Tiếp theo, em sẽ chuyển sang phần còn lại của **tổng quan kỹ thuật**
+
 **[Bấm chuyển slide]**.
